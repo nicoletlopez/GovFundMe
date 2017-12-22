@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="projects.xhtml">
+
+<ui:define name="project">
+<section class="xt-xt-single-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 padding-o">
+                <div class="xt-product-inner">
+                    <div class="col-md-5">
+                        <div role="tabpanel" class="tab-pane active xt-product-tab">
+                            <div class="tab-content xt-pro-small-image">
+                                <!-- Tab panel-->
+                                <div role="tabpanel" id="xt-pro-1" class="tab-pane fade">
+                                    <a class="grouped_elements" data-fancybox="gallery" href="#{resource['images/s-1.jpg']}">
+                                        <img src="#{resource['images/s-1.jpg']}" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" id="xt-pro-2" class="tab-pane fade">
+                                    <a class="grouped_elements" data-fancybox="gallery" href="#{resource['images/s-2.jpg']}">
+                                        <img src="#{resource['images/s-2.jpg']}" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" id="xt-pro-3" class="tab-pane fade active in">
+                                    <a class="grouped_elements" data-fancybox="gallery" href="#{resource['images/s-3.jpg']}">
+                                        <img src="#{resource['images/s-3.jpg']}" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                                <div role="tabpanel" id="xt-pro-4" class="tab-pane fade">
+                                    <a class="grouped_elements" data-fancybox="gallery" href="#{resource['images/s-4.jpg']}">
+                                        <img src="#{resource['images/s-4.jpg']}" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Nav tabs -->
+                            <ul id="tablist" class="xt-pro-thumbs-list" role="tablist">
+                                <li role="presentation" class="">
+                                    <a href="#xt-pro-1" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="#{resource['images/s-1.jpg']}" alt="product thumbs"/>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#xt-pro-2" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="#{resource['images/s-2.jpg']}" alt="product thumbs"/>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active">
+                                    <a href="#xt-pro-3" role="tab" data-toggle="tab" aria-expanded="true">
+                                        <img src="#{resource['images/s-3.jpg']}" alt="product thumbs"/>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#xt-pro-4" role="tab" data-toggle="tab" aria-expanded="false">
+                                        <img src="#{resource['images/s-4.jpg']}" alt="product thumbs"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="each-product-info">
+                            <h3>Nike Sneaker</h3>
+                            <span class="single-price"><b>Current Price:</b> $260</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco,</p>
+                            <div class="color-select">
+                                Color:
+                                <ul>
+                                    <li class="red-bg selected"><i class="fa fa-check"></i></li>
+                                    <li class="green-bg"><i class="fa fa-check"></i></li>
+                                    <li class="blue-bg"><i class="fa fa-check"></i></li>
+                                </ul>
+                            </div>
+                            <div class="select-size">
+                                Size:
+                                <ul>
+                                    <li class="selected">M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                </ul>
+                            </div>
+                            <div class="select-quantity">
+                                <input type="number" step="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"/>
+                            </div>
+                            <div class="product-add-cart">
+                                <a href="" class="btn btn-fill">Add to cart</a>
+                                <a href="" class="btn liked "><i class="fa fa-heart-o xt-no-color"></i><i class="fa fa-heart xt-color"></i></a>
+                            </div>
+                            <div class="product-additional-info">
+                                <ul>
+                                    <li><b>Sku:</b>P001</li>
+                                    <li><b>Category:</b><a href="">Fashion and clothings</a>, <a href="">Women</a></li>
+                                    <li><b>Tag:</b> <a href="">Rib</a>, <a href="">Neck</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="xt-product-description">
+        <div class="container">
+            <div class="row section-separator">
+                <div class="col-md-9">
+                    <div class="xt-single-item-info">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs xt-single-item-tab" role="tablist" id="xt-product-dec-nav">
+                            <li role="presentation" class="active">
+                                <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#review" aria-controls="review" role="tab" data-toggle="tab">Review(3)</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#seller" aria-controls="seller" role="tab" data-toggle="tab">Seller info</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#shopping" aria-controls="shopping" role="tab" data-toggle="tab">Shopping</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content xt-tab-content">
+                            <div role="tabpanel" class="tab-pane xt-pane xt-description fade in active" id="description">
+                                <h3>Product Description</h3>
+                                <b>Description</b>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                                    feugiat vitae, ultricies eget,</p>
+                                <ul>
+                                    <li> 73.6% Cotton </li>
+                                    <li> 24.5% Polyester </li>
+                                    <li> 1.9% Elastane </li>
+                                </ul>
+                                <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique
+                                    senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane xt-pane fade" id="specification">
+                                <h3>Product Specification</h3>
+
+                                <p>Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson
+                                    ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate
+                                    nisi qui.</p>
+                                <ul>
+                                    <li> 73.6% Cotton </li>
+                                    <li> 24.5% Polyester </li>
+                                    <li> 1.9% Elastane </li>
+                                    <li> 73.6% Cotton </li>
+                                    <li> 24.5% Polyester </li>
+                                    <li> 1.9% Elastane </li>
+                                    <li> 73.6% Cotton </li>
+                                    <li> 24.5% Polyester </li>
+                                    <li> 1.9% Elastane </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane xt-pane xt-review fade" id="review">
+                                <h3>Product Review</h3>
+                                <p>retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                    Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry
+                                    richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                    butcher voluptate nisi qui</p>
+                                <ul class="item-review">
+                                    <li>
+                                        <img src="#{resource['images/rating.png']}" alt="" />
+                                        <h4>Angel Brown</h4>
+                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                            butcher voluptate nisi qui</p>
+                                    </li>
+                                    <li>
+                                        <img src="#{resource['images/rating.png']}" alt="" />
+                                        <h4>Mark Monster</h4>
+                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                            butcher voluptate nisi qui</p>
+                                    </li>
+                                    <li>
+                                        <img src="#{resource['images/rating.png']}" alt="" />
+                                        <h4>Lol Brown</h4>
+                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                            butcher voluptate nisi qui</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane xt-pane fade" id="seller">
+                                aw denim you probably haven't heard of them jean shorts Austin.
+                                Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi
+                            </div>
+                            <div role="tabpanel" class="tab-pane xt-pane fade" id="shopping">
+                                aw denim you probably haven't heard of them jean shorts Austin.
+                                Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                                Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</ui:define>
+
+</ui:composition>

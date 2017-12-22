@@ -13,38 +13,11 @@
                 <div class="row">
                     <!-- SIDEBAR -->
                     <aside class="col-md-3 product-sidebar">
-                        <div class="xt-top-product">
-                            <h3>Top Rated Products</h3>
-                            <div class="each-top-product">
-                                <div class="top-item">
-                                    <img src="assets/images/1.jpg" alt="" class="img-responsive"/>
-                                    <div class="top-item-info">
-                                        <a href=""><h4>T-SHIRT</h4></a>
-                                        <span>$260</span>
-                                        <del>$280</del>
-                                    </div>
-                                </div>
-                                <div class="top-item">
-                                    <img src="assets/images/3.jpg" alt="" class="img-responsive"/>
-                                    <div class="top-item-info">
-                                        <a href=""><h4>NEW LOOK</h4></a>
-                                        <span>$260</span>
-                                        <del>$280</del>
-                                    </div>
-                                </div>
-                                <div class="top-item">
-                                    <img src="assets/images/b2.jpg" alt="" class="img-responsive"/>
-                                    <div class="top-item-info">
-                                        <a href=""><h4>Shirt</h4></a>
-                                        <span>$260</span>
-                                        <del>$280</del>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </aside>
                     <div class="col-md-9">
                         <!--end singlw item info -->
+                        <ui:insert name="project">
                         <div class="xt-feature-product">
                             <div class="section-separator">
                                 <div class="xt-filter-nav">
@@ -96,7 +69,7 @@
                                     <div class="col-md-4 col-sm-4">
                                         <div class="xt-feature">
                                             <div class="product-img">
-                                                <a href="#"><img src="#{resource['images/2.jpg']}" alt="" class="img-responsive"/></a>
+                                                <a href="single-project.jsf"><img src="#{resource['images/2.jpg']}" alt="" class="img-responsive"/></a>
                                                 <span class="product-tag xt-uppercase">sale!</span>
                                             </div>
                                             <div class="product-info">
@@ -905,6 +878,7 @@
                             </div>
                             <!---->
                         </div>
+                        </ui:insert>
                     </div>
                 </div>
             </div>
