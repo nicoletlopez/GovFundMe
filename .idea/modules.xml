@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/govfundme.iml" filepath="$PROJECT_DIR$/govfundme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GovFundMe.iml" filepath="$PROJECT_DIR$/GovFundMe.iml" />
     </modules>
   </component>
 </project>
