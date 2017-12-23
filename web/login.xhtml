@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="base.xhtml">
+
+
+    <ui:define name="title">Account Login</ui:define>
+    <ui:define name="body">
+
+        <hr class="xt-hr"/>
+
+        <div class="row">
+            <form>
+            <div class="col-md-7 col-md-offset-4">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>User Login</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                    <input type="text" class="form-control" placeholder="Username" required="" />
+                    </div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-md-7">
+                        <input type="password" class="form-control" placeholder="Password" required="" />
+                    </div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="button" value="Login" class="btn btn-default"/>
+                    </div>
+                    <div class="col-md-5">
+                        <p>New to the site? <a href="create-account.jsf">Create an Account</a></p>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+
+    </ui:define>
+</ui:composition>

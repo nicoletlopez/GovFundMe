@@ -50,7 +50,6 @@
     <h:outputStylesheet library="plugins" name="css/bootstrap-dropdownhover.min.css"/>
     <!-- mobile nav-->
     <h:outputStylesheet library="plugins" name="css/meanmenu.css"/>
-
     <!-- COUSTOM CSS link  -->
     <h:outputStylesheet library="css" name="style.css"/>
     <h:outputStylesheet library="css" name="responsive.css"/>
@@ -88,9 +87,17 @@
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
                                 <li class=""><a href="index.jsf">Home</a></li>
                                 <li><a href="projects.jsf">Projects</a></li>
-                                <li><a href="">Start a project</a></li>
-                                <li><a href="">Create an account</a></li>
-                                <li><a href="">Login</a></li>
+                                <li><a href="start-project.jsf">Start a project</a></li>
+                                <li><a href="create-account.jsf">Create an account</a></li>
+                                <li><a href="login.jsf">Login</a></li>
+                                <li class="dropdown xt-drop-nav">
+                                    <a href="my-account.jsf" class="dropdown-toggle" data-hover="dropdown">
+                                        My Account <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -98,163 +105,8 @@
             </nav>
         </div>
         <!--Mobile Menu-->
-        <div class="main-color-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 left-menu-wrapper">
-                        <div class="xt-sidenav hidden-xs hidden-sm">
-                            <nav>
-                                <ul class="xt-side-menu">
-                                    <li>
-                                        <a href="#">All Category</a>
-                                        <ul class="xt-dropdown">
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml">
-                                                    <i class="fa flaticon-glasses"/> FASHION</a>
-                                                <ul class="mega-menu">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Bags</a></li>
-                                                            <li><a href="single-shop.xhtml">Funky</a></li>
-                                                            <li><a href="single-shop.xhtml">Ear Wear</a></li>
-                                                            <li><a href="single-shop.xhtml">Shoes</a></li>
-                                                            <li><a href="single-shop.xhtml">Cosmetic</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Shirt</a></li>
-                                                            <li><a href="single-shop.xhtml">Pant</a></li>
-                                                            <li><a href="single-shop.xhtml">Trousers</a></li>
-                                                            <li><a href="single-shop.xhtml">Jackets &amp; sweater</a>
-                                                            </li>
-                                                            <li><a href="single-shop.xhtml">T-Shirts</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                                        class="fa flaticon-dress"/> WOMEN'S</a>
-                                                <ul class="mega-menu">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Accessories</a></li>
-                                                            <li><a href="single-shop.xhtml">Ornaments</a></li>
-                                                            <li><a href="single-shop.xhtml">Shoes</a></li>
-                                                            <li><a href="single-shop.xhtml">3 Piece</a></li>
-                                                            <li><a href="single-shop.xhtml">Cosmetic</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Ring</a></li>
-                                                            <li><a href="single-shop.xhtml">Bags</a></li>
-                                                            <li><a href="single-shop.xhtml">Ear Wear</a></li>
-                                                            <li><a href="single-shop.xhtml">Storage</a></li>
-                                                            <li><a href="single-shop.xhtml">Office</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="single-shop.xhtml"><i class="fa flaticon-high-heel"/>
-                                                SHOES</a>
-                                            </li>
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                                        class="fa flaticon-v-neck-shirt"/> MAN'S</a>
-                                                <ul class="mega-menu xt-column">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Jeans Pant</a></li>
-                                                            <li><a href="single-shop.xhtml">T-Shirts</a></li>
-                                                            <li><a href="single-shop.xhtml">Pant</a></li>
-                                                            <li><a href="single-shop.xhtml">Jackets</a></li>
-                                                            <li><a href="single-shop.xhtml">Cap</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="single-shop.xhtml"><i class="fa flaticon-jacket"/>
-                                                JACKETS</a>
-                                            </li>
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                                        class="fa flaticon-cosmetics"/> COSMETICS</a>
-                                                <ul class="mega-menu xt-column">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Lipstick</a></li>
-                                                            <li><a href="single-shop.xhtml">Makeup Brush</a></li>
-                                                            <li><a href="single-shop.xhtml">Nail Polish</a></li>
-                                                            <li><a href="single-shop.xhtml"> Hair Dryers</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                                        class="fa flaticon-hijab"/>BOURKHA &amp; HIJAB</a>
-                                                <ul class="mega-menu xt-column">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">Iranian</a></li>
-                                                            <li><a href="single-shop.xhtml">Arabian</a></li>
-                                                            <li><a href="single-shop.xhtml">Indian</a></li>
-                                                            <li><a href="single-shop.xhtml">Indonesian</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                                        class="fa flaticon-jacket-1"/>Coats &amp; Gilets</a>
-                                                <ul class="mega-menu xt-column">
-                                                    <li>
-                                                        <ul class="xt-single-mega">
-                                                            <li><a href="single-shop.xhtml">German Coats</a></li>
-                                                            <li><a href="single-shop.xhtml">Bangladeshi Blezzar</a></li>
-                                                            <li><a href="single-shop.xhtml">Thailand Gilets</a></li>
-                                                            <li><a href="single-shop.xhtml">Indian Coats</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="single-shop.xhtml"><i
-                                                    class="fa flaticon-dress-1"/>Boutique</a>
-                                            </li>
-                                            <li><a href="#"> <i class="fa flaticon-menu"/> More
-                                                Categories</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 col-sm-10 col-xs-12 xt-header-search">
-                        <div class="form-group xt-form search-bar  col-md-8 col-sm-8 col-xs-7 padding-right-o">
-                            <input class="form-control" placeholder="Search for snippets"/>
-                        </div>
-                        <div class="form-group xt-form xt-search-cat col-md-4 col-sm-4 col-xs-5 padding-left-o ">
-                            <div class="xt-select xt-search-opt">
-                                <h:form>
-                                    <h:selectOneMenu class="xt-dropdown-search select-beast">
-
-                                    </h:selectOneMenu>
-                                </h:form>
-                            </div>
-                            <div class="xt-search-opt xt-search-btn">
-                                <button type="button" class="btn btn-primary btn-search"><i class="fa fa-search"/>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <ui:insert name="mobilemenu">
+        </ui:insert>
     </header>
     <ui:insert name="body"/>
     <!--
