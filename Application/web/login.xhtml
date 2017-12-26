@@ -3,6 +3,7 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
                 template="base.xhtml">
 
 
@@ -21,17 +22,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                    <input type="text" class="form-control" placeholder="Username" required="" />
+                    <h:inputText type="text" styleClass="form-control" a:placeholder="Username" name="username" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="password" class="form-control" placeholder="Password" required="" />
+                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Password" name="password" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2 form-group">
-                        <input type="button" value="Login" class="btn btn-default"/>
+                        <h:commandButton type="submit" action="#{loginBean.login}" value="Login" styleClass="btn btn-default"/>
                     </div>
                     <div class="col-md-5 form-group">
                         <p>New to the site? <a href="create-account.jsf">Create an Account</a></p>
