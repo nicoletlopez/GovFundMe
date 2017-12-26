@@ -3,6 +3,7 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
                 template="base.xhtml">
 
 
@@ -10,7 +11,7 @@
     <ui:define name="body">
         <hr class="xt-hr"/>
         <div class="row">
-            <form>
+            <h:form>
             <div class="col-md-7 col-md-offset-4">
                 <div class="row">
                     <div class="col-md-7 form-group">
@@ -19,45 +20,45 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 form-group">
-                        <input type="text" class="form-control" placeholder="First name" required="" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="First name" required="true" value="#{signupBean.fname}" />
                     </div>
                     <div class="col-md-3 form-group">
-                        <input type="text" class="form-control" placeholder="Surname" required="" />
+                        <h:inputText type="text"  styleClass="form-control" a:placeholder="Surname" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="text" class="form-control" placeholder="E-mail" required="" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="E-mail" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="text" class="form-control" placeholder="Username" required="" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="Username" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="password" class="form-control" placeholder="Password" required="" />
+                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Password" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="password" class="form-control" placeholder="Confirm Password" required="" />
+                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Confirm Password" required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="text" class="form-control" placeholder="Credit Card No." required="" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="Credit Card No." required="true" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2 form-group">
-                        <input type="button" value="Create Account" class="btn btn-default"/>
+                        <h:commandButton type="submit" action="#{signupBean.signup}" value="Create Account" styleClass="btn btn-default" />
                     </div>
                 </div>
 
             </div>
-            </form>
+            </h:form>
         </div>
     </ui:define>
 </ui:composition>
