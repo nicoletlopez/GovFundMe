@@ -3,16 +3,21 @@ package models.daos;
 import models.entities.Card;
 import models.entities.User;
 import models.services.SignupService;
+import org.hibernate.HibernateException;
+import org.hibernate.exception.ConstraintViolationException;
 
 import javax.persistence.*;
 
 public class SignupDao implements SignupService
 {
-/*    public static void main(String[] args)
+    private boolean status;
+
+    public static void main(String[] args)
     {
         SignupDao signupDao = new SignupDao();
-        boolean result = signupDao.signup("admin","admin","admin@admin.com","admin","admin","1234523");
-    }*/
+        boolean result = signupDao.signup("admin", "admin", "admin@admin.com", "admin", "admin", "123459");
+    }
+
     @Override
     public boolean signup(String fname, String lname, String email, String username, String password, String ccNum)
     {
@@ -26,34 +31,40 @@ public class SignupDao implements SignupService
 
         //heck i gotta find a way to reduce redundancy of this thing. An interfaces with an array return type
         //containing the two objects???
-        EntityManagerFactory  entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
         EntityManager em = entityManagerFactory.createEntityManager();
 
         //get the corresponding card with the same credit card number
         try
         {
-            em.getTransaction().begin();
-
-            Card userCard = getCardByCcNum(ccNum);
-            user.setCardId(userCard);
-            em.persist(user);
-            return true;
-
+            assignCardSearchByCcNum(ccNum, user);
+            status = true;
         }
         catch (NoResultException ex)
         {
             System.out.println("No such credit card number exists");
             ex.printStackTrace();
-            return false;
+            status = false;
+        }
+        catch (ConstraintViolationException constViolationEx)
+        {
+            System.out.println("Users may have only one individual card - FK violation");
+            constViolationEx.printStackTrace();
+            status = false;
+        }
+        catch (HibernateException hibernateException)
+        {
+            System.out.println("Too many database connections");
+            hibernateException.printStackTrace();
+            status = false;
         }
         finally
         {
-            em.getTransaction().commit();
-            entityManagerFactory.close();
+            return status;
         }
     }
 
-    private Card getCardByCcNum(String ccNum) throws NoResultException
+    private void assignCardSearchByCcNum(String ccNum, User user) throws NoResultException, ConstraintViolationException
     {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
@@ -65,12 +76,13 @@ public class SignupDao implements SignupService
         cardQuery.setParameter("ccNumber", ccNum);
 
         Card card = cardQuery.getSingleResult();
-        System.out.println(card.getClass());
-        System.out.println(card.getCcNum());
+
+        user.setCardId(card);
+
+        em.persist(user);
 
         em.getTransaction().commit();
         entityManagerFactory.close();
 
-        return card;
     }
 }

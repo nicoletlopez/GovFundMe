@@ -53,9 +53,10 @@ public class LoginBean
         {
             authBean.setLoggedUsername(this.username);
             return "projects";
-        } else
+        }
+        else
         {
-            return "index";
+            return "login";
         }
     }
 }

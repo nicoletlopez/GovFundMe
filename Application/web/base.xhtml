@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
 >
 
 <h:head>
     <!-- TITLE OF SITE -->
-    <title><ui:insert name="title">GovFundMe</ui:insert> </title>
+    <title><ui:insert name="title">GovFundMe</ui:insert></title>
 
     <!-- Meta -->
     <meta charset="utf-8"/>
@@ -21,7 +21,8 @@
     <!-- FAV AND ICONS   -->
     <link rel="icon" href="#{resource['images/favicon.ico']}"/>
     <link rel="icon" type="image/png" href="#{resource['images/apple-icon.png']}/resources/images/apple-icon.png"/>
-    <link rel="icon" type="image/png" sizes="72x72" href="#{resource['images/apple-icon-72x72.png']}/resources/images/apple-icon-72x72.png"/>
+    <link rel="icon" type="image/png" sizes="72x72"
+          href="#{resource['images/apple-icon-72x72.png']}/resources/images/apple-icon-72x72.png"/>
     <link rel="icon" type="image/png" sizes="114x114" href="#{resource['images:apple-icon-114x114.png']}"/>
 
     <!-- GOOGLE FONTS -->
@@ -86,17 +87,26 @@
 
                         <div class="collapse navbar-collapse" id="js-navbar-menu">
                             <ul class="nav navbar-nav navbar-right ep-mobile-menu" id="navbar-nav">
-                                <li class=""><h:link  outcome="index">Home</h:link ></li>
+                                <li class=""><h:link outcome="index">Home</h:link></li>
                                 <li><h:link outcome="projects">Projects</h:link></li>
-                                <li><h:link outcome="start-project">Start a project</h:link></li>
-                                <li><h:link outcome="create-account">Create an account</h:link></li>
-                                <li><h:link outcome="login">Login</h:link></li>
+                                <c:if test="#{not empty authBean.loggedUsername}">
+                                    <li><h:link outcome="start-project">Start a project</h:link></li>
+                                </c:if>
+                                <c:if test="#{empty authBean.loggedUsername}">
+                                    <li><h:link outcome="create-account">Create an account</h:link></li>
+                                    <li><h:link outcome="login">Login</h:link></li>
+                                </c:if>
                                 <li class="dropdown xt-drop-nav">
-                                    <h:link href="my-account.jsf" class="dropdown-toggle" data-hover="dropdown">
+                                    <a href="my-account.jsf" class="dropdown-toggle" data-hover="dropdown">
                                         My Account <span class="caret"></span>
-                                    </h:link>
+                                    </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Logout</a></li>
+                                        <h:form>
+                                            <c:if test="#{not empty authBean.loggedUsername}">
+                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink>
+                                                </li>
+                                            </c:if>
+                                        </h:form>
                                     </ul>
                                 </li>
                             </ul>

@@ -129,6 +129,7 @@ public class User implements Serializable
     }*/
 
     @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="cardId", unique = true)
     private Card cardId;
 
     public Card getCardId()
