@@ -128,7 +128,7 @@ public class User implements Serializable
         isAuthenticated = authenticated;
     }*/
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.EAGER)
     private Card cardId;
 
     public Card getCardId()

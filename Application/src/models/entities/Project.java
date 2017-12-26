@@ -48,27 +48,27 @@ public class Project implements Serializable
     }
 
     @Basic
-    private Double projectBalance;
+    private double projectBalance;
 
-    public Double getProjectBalance()
+    public double getProjectBalance()
     {
         return projectBalance;
     }
 
-    public void setProjectBalance(Double projectBalance)
+    public void setProjectBalance(double projectBalance)
     {
         this.projectBalance = projectBalance;
     }
 
     @Basic
-    private Double projectTarget;
+    private double projectTarget;
 
-    public Double getProjectTarget()
+    public double getProjectTarget()
     {
         return projectTarget;
     }
 
-    public void setProjectTarget(Double projectTarget)
+    public void setProjectTarget(double projectTarget)
     {
         this.projectTarget = projectTarget;
     }
@@ -139,5 +139,15 @@ public class Project implements Serializable
     public void setUsersDonated(List<User> usersDonated)
     {
         this.usersDonated = usersDonated;
+    }
+
+    public Project()
+    {
+
+    }
+
+    public Project(double projectBalance, String projectCategory, String projectDesc, String projectImage, String projectName, String projectStatus, double projectTarget)
+    {
+
     }
 }

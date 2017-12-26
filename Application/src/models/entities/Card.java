@@ -21,20 +21,20 @@ public class Card implements Serializable
     }
 
     @Basic
-    private Double cardBalance;
+    private double cardBalance;
 
-    public Double getCardBalance()
+    public double getCardBalance()
     {
         return cardBalance;
     }
 
-    public void setCardBalance(Double cardBalance)
+    public void setCardBalance(double cardBalance)
     {
         this.cardBalance = cardBalance;
     }
 
-    @ManyToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="typeId")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "typeId")
     private CardType typeId;
 
     public CardType getTypeId()
@@ -48,5 +48,42 @@ public class Card implements Serializable
     {
         this.typeId = cardType;
     }
+
+    @Basic
+    @Column(unique = true)
+    private String ccNum;
+
+    public String getCcNum()
+    {
+        return ccNum;
+    }
+
+    public void setCcNum(String ccNum)
+    {
+        this.ccNum = ccNum;
+    }
+
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "cardId", cascade = CascadeType.ALL)
+    private User userId;
+
+    public User getUserId()
+    {
+        return userId;
+    }
+
+    public void setUserId(User userId)
+    {
+        this.userId = userId;
+    }
+
+    public Card()
+    {}
+
+    public Card(double cardBalance, CardType typeId)
+    {
+        this.cardBalance = cardBalance;
+        this.typeId = typeId;
+    }
+
 
 }
