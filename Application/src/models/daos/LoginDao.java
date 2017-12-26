@@ -8,13 +8,13 @@ import javax.persistence.*;
 
 public class LoginDao implements LoginService
 {
-    public static void main(String[] args)
+/*    public static void main(String[] args)
     {
         LoginDao loginDao = new LoginDao();
         boolean result = loginDao.login("admin","admin");
 
         System.out.println(result);
-    }
+    }*/
     @Override
     public boolean login(String username, String password)
     {
