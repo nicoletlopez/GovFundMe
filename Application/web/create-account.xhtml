@@ -11,6 +11,7 @@
     <ui:define name="body">
         <hr class="xt-hr"/>
         <div class="row">
+            <p>#{signupBean.infoMessage}</p>
             <h:form>
             <div class="col-md-7 col-md-offset-4">
                 <div class="row">
@@ -23,40 +24,39 @@
                         <h:inputText type="text" styleClass="form-control" a:placeholder="First name" id="first-name" required="true" value="#{signupBean.fname}" />
                     </div>
                     <div class="col-md-3 form-group">
-                        <h:inputText type="text"  styleClass="form-control" a:placeholder="Surname" id="surname" required="true" />
+                        <h:inputText type="text"  styleClass="form-control" a:placeholder="Surname" id="surname" required="true" value="#{signupBean.fname}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="text" styleClass="form-control" a:placeholder="E-mail" id="email" required="true" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="E-mail" id="email" required="true" value="#{signupBean.email}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="text" styleClass="form-control" a:placeholder="Username" id="username" required="true" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="Username" id="username" required="true" value="#{signupBean.username}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Password" id="password" required="true" />
+                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Password" id="password" required="true" value="#{signupBean.password}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Confirm Password" id="confirm-password" required="true" />
+                        <h:inputSecret type="password" styleClass="form-control" a:placeholder="Confirm Password" id="confirm-password" required="true" value="#{signupBean.confPass}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="text" styleClass="form-control" a:placeholder="Credit Card No." id="cc-number" required="true" />
+                        <h:inputText type="text" styleClass="form-control" a:placeholder="Credit Card No." id="cc-number" required="true" value="#{signupBean.ccNum}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2 form-group">
-                        <h:commandButton type="submit" action="#{signupBean.signup}" value="Create Account" styleClass="btn btn-default" />
+                        <h:commandButton type="submit" action="#{signupBean.signup}" value="Create Account" styleClass="btn btn-default"/>
                     </div>
                 </div>
-
             </div>
             </h:form>
         </div>
