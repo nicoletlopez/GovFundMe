@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GovFundMe.iml" filepath="$PROJECT_DIR$/GovFundMe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Application.iml" filepath="$PROJECT_DIR$/Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../govfundmemaven/govfundme-maven.iml" filepath="$PROJECT_DIR$/../govfundmemaven/govfundme-maven.iml" />
     </modules>
   </component>
 </project>
