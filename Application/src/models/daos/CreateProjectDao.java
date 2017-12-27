@@ -69,7 +69,7 @@ public class CreateProjectDao implements CreateProjectService
 
         User userLoggedIn = userLoggedInQuery.getSingleResult();
 
-        em.getTransaction().commit();
+        em.getTransaction().rollback();
         entityManagerFactory.close();
 
         return userLoggedIn;

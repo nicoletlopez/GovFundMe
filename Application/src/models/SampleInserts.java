@@ -42,6 +42,16 @@ public class SampleInserts
             goldCard1.setCcNum("123458");
             goldCard1.setTypeId(gold);
 
+            Card goldCard2 = new Card();
+            goldCard2.setCardBalance(250);
+            goldCard2.setCcNum("111111");
+            goldCard2.setTypeId(gold);
+
+            Card goldCard3 = new Card();
+            goldCard3.setCardBalance(400);
+            goldCard2.setCcNum("222222");
+            goldCard2.setTypeId(gold);
+
             Card silverCard1 = new Card();
             silverCard1.setCardBalance(2000);
             silverCard1.setCcNum("123459");
@@ -90,6 +100,8 @@ public class SampleInserts
             em.persist(platinumCard1);
             em.persist(platinumCard2);
             em.persist(goldCard1);
+            em.persist(goldCard2);
+            em.persist(goldCard3);
             em.persist(silverCard1);
 
             em.persist(user1);
@@ -98,11 +110,12 @@ public class SampleInserts
             em.persist(user4);
         } catch (Exception ex)
         {
+            em.getTransaction().rollback();
             ex.printStackTrace();
         }
         finally
         {
-            em.getTransaction().rollback();
+            em.getTransaction().commit();
             entityManagerFactory.close();
             System.out.println("connection closed");
         }

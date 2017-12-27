@@ -2,7 +2,6 @@ package models.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Date;
 
@@ -114,7 +113,7 @@ public class Project implements Serializable
         this.projectImage = projectImage;
     }
 
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     public Date getDate()
