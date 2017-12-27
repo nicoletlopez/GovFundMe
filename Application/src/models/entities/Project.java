@@ -115,7 +115,7 @@ public class Project implements Serializable
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date date = ;
+    private Date date;
 
     public Date getDate()
     {

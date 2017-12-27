@@ -6,19 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="create project in progress, added username display at frontend">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/beans/CreateProjectBean.java" />
+    <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/beans/LoginBean.java" afterPath="$PROJECT_DIR$/src/beans/LoginBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/SampleInserts.java" afterPath="$PROJECT_DIR$/src/models/SampleInserts.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/CreateProjectDao.java" afterPath="$PROJECT_DIR$/src/models/daos/CreateProjectDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/CardType.java" afterPath="$PROJECT_DIR$/src/models/entities/CardType.java" />
       <change beforePath="$PROJECT_DIR$/src/models/entities/Project.java" afterPath="$PROJECT_DIR$/src/models/entities/Project.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/User.java" afterPath="$PROJECT_DIR$/src/models/entities/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/CreateProjectService.java" afterPath="$PROJECT_DIR$/src/models/services/CreateProjectService.java" />
-      <change beforePath="$PROJECT_DIR$/web/base.xhtml" afterPath="$PROJECT_DIR$/web/base.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/login.xhtml" afterPath="$PROJECT_DIR$/web/login.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/start-project.xhtml" afterPath="$PROJECT_DIR$/web/start-project.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../govfundmemaven/target/" />
@@ -43,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateProjectDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreateProjectDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/daos/CreateProjectDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -55,17 +45,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Project.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+            <state relative-caret-position="276">
+              <caret line="117" column="22" lean-forward="false" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2217#2218#0" expanded="true" />
-                <element signature="e#2244#2245#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="e#2318#2319#0" expanded="true" />
+                <element signature="e#2214#2215#0" expanded="true" />
+                <element signature="e#2241#2242#0" expanded="true" />
+                <element signature="e#2283#2284#0" expanded="true" />
+                <element signature="e#2315#2316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -736,7 +726,7 @@
       <workItem from="1514272587487" duration="42114000" />
       <workItem from="1514328669245" duration="20261000" />
       <workItem from="1514361886080" duration="179000" />
-      <workItem from="1514362439617" duration="1660000" />
+      <workItem from="1514362439617" duration="1747000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: commented out LoginDao test case">
       <created>1514299601719</created>
@@ -801,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514352679608</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="create project">
+      <created>1514364218444</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1514364218444</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98612000" />
+    <option name="totallyTimeSpent" value="98699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -930,7 +927,8 @@
     <MESSAGE value="sign in feature operational" />
     <MESSAGE value="CheckPoint - test cases" />
     <MESSAGE value="create project in progress, added username display at frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project in progress, added username display at frontend" />
+    <MESSAGE value="create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1423,26 +1421,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2318#2319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/daos/CreateProjectDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="37" column="70" lean-forward="true" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="117" column="22" lean-forward="false" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="e#2315#2316#0" expanded="true" />
           </folding>
         </state>
       </provider>
