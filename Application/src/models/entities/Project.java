@@ -113,6 +113,7 @@ public class Project implements Serializable
     }
 
     @ManyToOne
+    @JoinColumn(name="userId")
     private User userId;
 
     public User getUserId()
@@ -141,13 +142,5 @@ public class Project implements Serializable
         this.usersDonated = usersDonated;
     }
 
-    public Project()
-    {
 
-    }
-
-    public Project(double projectBalance, String projectCategory, String projectDesc, String projectImage, String projectName, String projectStatus, double projectTarget)
-    {
-
-    }
 }

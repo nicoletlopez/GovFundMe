@@ -2,6 +2,7 @@ package models;
 
 import models.entities.Card;
 import models.entities.CardType;
+import models.entities.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -42,6 +43,39 @@ public class SampleInserts
         silverCard1.setCcNum("123459");
         silverCard1.setTypeId(silver);
 
+
+        User user1 = new User();
+        user1.setUserEmail("user1@email.com");
+        user1.setUserFname("Johnny");
+        user1.setUserLname("Fins");
+        user1.setUserPassword("user1");
+        user1.setUserUsername("user1");
+        user1.setCardId(platinumCard1);
+
+        User user2 = new User();
+        user2.setUserEmail("user2@email.com");
+        user2.setUserFname("Fred");
+        user2.setUserLname("Andrews");
+        user2.setUserPassword("user2");
+        user2.setUserUsername("user2");
+        user2.setCardId(platinumCard2);
+
+        User user3 = new User();
+        user3.setUserEmail("user3@email.com");
+        user3.setUserFname("Natasha");
+        user3.setUserLname("Gray");
+        user3.setUserPassword("user3");
+        user3.setUserUsername("user3");
+        user3.setCardId(goldCard1);
+
+        User user4 = new User();
+        user4.setUserEmail("user4@email.com");
+        user4.setUserFname("Shania");
+        user4.setUserLname("Khalifa");
+        user4.setUserPassword("user4");
+        user4.setUserUsername("user4");
+        user4.setCardId(silverCard1);
+
         EntityManager em = entityManagerFactory.createEntityManager();
         em.getTransaction().begin();
 
@@ -53,6 +87,12 @@ public class SampleInserts
         em.persist(platinumCard2);
         em.persist(goldCard1);
         em.persist(silverCard1);
+
+        em.persist(user1);
+        em.persist(user2);
+        em.persist(user3);
+        em.persist(user4);
+
 
         em.getTransaction().commit();
         entityManagerFactory.close();

@@ -48,6 +48,7 @@ public class User implements Serializable
     }
 
     @Basic
+    @Column(unique = true)
     private String userUsername;
 
     public String getUserUsername()

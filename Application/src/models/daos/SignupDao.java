@@ -15,7 +15,7 @@ public class SignupDao implements SignupService
     public static void main(String[] args)
     {
         SignupDao signupDao = new SignupDao();
-        boolean result = signupDao.signup("admin", "admin", "admin@admin.com", "admin", "admin", "123459");
+        boolean result = signupDao.signup("admin", "admin", "admin@admin.com", "user4", "admin", "123459");
     }
 
     @Override
@@ -48,7 +48,7 @@ public class SignupDao implements SignupService
         }
         catch (ConstraintViolationException constViolationEx)
         {
-            System.out.println("Users may have only one individual card - FK violation");
+            /*System.out.println("Users may have only one individual card - FK violation");*/
             constViolationEx.printStackTrace();
             status = false;
         }
@@ -60,6 +60,7 @@ public class SignupDao implements SignupService
         }
         finally
         {
+            System.out.println(status);
             return status;
         }
     }
@@ -83,6 +84,5 @@ public class SignupDao implements SignupService
 
         em.getTransaction().commit();
         entityManagerFactory.close();
-
     }
 }

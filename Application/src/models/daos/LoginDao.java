@@ -10,57 +10,55 @@ import java.util.List;
 
 public class LoginDao implements LoginService
 {
-/*    private EntityManagerFactory entityManagerFactory;
-    private EntityManager em;*/
+    private boolean result;
 
-    public static void main(String[] args)
+/*    public static void main(String[] args) throws NoResultException
     {
         LoginDao loginDao = new LoginDao();
-        boolean result = loginDao.login("admin", "admindaw");
-    }
+        boolean result = loginDao.login("user1", "user1");
+    }*/
 
     @Override
     public boolean login(String username, String password)
     {
-        boolean status = false;
+        try
+        {
+            validate(username, password);
+        }
+        catch (NoResultException ex)
+        {
+            System.out.println("error");
+        }
+        finally
+        {
+            System.out.println(result);
+            return result;
+        }
+    }
 
-/*        try
-        {*/
+    public void validate(String username, String password) throws NoResultException
+    {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
         EntityManager em = entityManagerFactory.createEntityManager();
+
         em.getTransaction().begin();
+        TypedQuery<User> usersofUserAndPass = em.createQuery("select user from User user where user.userUsername = :usernameParam and user.userPassword = :passwordParam", User.class);
 
-        TypedQuery<User> userLoginQuery = em.createQuery("select userLogin from User userLogin where userLogin.userUsername = :usernameParam and userLogin.userPassword = :passwordParam", User.class);
-        userLoginQuery.setParameter("usernameParam", username);
-        userLoginQuery.setParameter("passwordParam", password);
+        usersofUserAndPass.setParameter("usernameParam", username);
+        usersofUserAndPass.setParameter("passwordParam", password);
 
-        List<User> userLogin = userLoginQuery.getResultList();
-
-        if(userLogin == null)
-        {
-            System.out.println(false);
-        }
-        else
-        {
-            System.out.println(true);
-        }
+        List<User> userLogin = usersofUserAndPass.getResultList();
 
         em.getTransaction().commit();
         entityManagerFactory.close();
 
-
-/*        }
-        catch (NoResultException ex)
+        if (userLogin.size() == 0)
         {
-            ex.printStackTrace();
-            System.out.println("No such user");
-            status = false;
+            result = false;
+            throw new NoResultException("User does not exist");
+        } else
+        {
+            result = true;
         }
-        finally
-        {
-            System.out.println(status);
-            return status;
-        }*/
-return true;
     }
 }
