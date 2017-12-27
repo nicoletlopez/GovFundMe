@@ -126,10 +126,10 @@ public class Project implements Serializable
         this.userId = userId;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name="DonationReceipt",
             joinColumns = {@JoinColumn(name="projectId")},
-            inverseJoinColumns = {@JoinColumn(name="UserId")})
+            inverseJoinColumns = {@JoinColumn(name="userId")})
     private List<User> usersDonated;
 
     public List<User> getUsersDonated()

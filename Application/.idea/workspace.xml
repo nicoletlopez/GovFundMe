@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/DirectQueries.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/JoinQueries.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/daos/CreateProjectDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/services/CreateProjectService.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/models/SampleInserts.java" afterPath="$PROJECT_DIR$/src/models/SampleInserts.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/Card.java" afterPath="$PROJECT_DIR$/src/models/entities/Card.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/CardType.java" afterPath="$PROJECT_DIR$/src/models/entities/CardType.java" />
+      <change beforePath="$PROJECT_DIR$/src/models/daos/LoginDao.java" afterPath="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
       <change beforePath="$PROJECT_DIR$/src/models/entities/Project.java" afterPath="$PROJECT_DIR$/src/models/entities/Project.java" />
       <change beforePath="$PROJECT_DIR$/src/models/entities/User.java" afterPath="$PROJECT_DIR$/src/models/entities/User.java" />
+      <change beforePath="$PROJECT_DIR$/web/base.xhtml" afterPath="$PROJECT_DIR$/web/base.xhtml" />
+      <change beforePath="$PROJECT_DIR$/web/start-project.xhtml" afterPath="$PROJECT_DIR$/web/start-project.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../govfundmemaven/target/" />
@@ -39,28 +39,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/entities/Card.java">
+      <file leaf-file-name="CreateProjectService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/services/CreateProjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="6" column="163" lean-forward="false" selection-start-line="6" selection-start-column="163" selection-end-line="6" selection-end-column="163" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/entities/CardType.java">
+      <file leaf-file-name="base.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/base.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-217">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="191">
+              <caret line="102" column="65" lean-forward="false" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-project.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start-project.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="123" lean-forward="false" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateProjectDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/daos/CreateProjectDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
-                <element signature="e#892#893#0" expanded="true" />
-                <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +94,18 @@
       <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="128" column="39" lean-forward="false" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+            <state relative-caret-position="293">
+              <caret line="128" column="38" lean-forward="false" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/daos/LoginDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,21 +114,9 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/entities/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+            <state relative-caret-position="306">
+              <caret line="102" column="38" lean-forward="false" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectQueries.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/DirectQueries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +126,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="jsf" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -149,11 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/single-project.xhtml" />
-        <option value="$PROJECT_DIR$/web/start-project.xhtml" />
-        <option value="$PROJECT_DIR$/src/models/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/models/services/AddCard.java" />
         <option value="$PROJECT_DIR$/src/models/QueryTest.java" />
         <option value="$PROJECT_DIR$/../govfundmemaven/pom.xml" />
         <option value="$PROJECT_DIR$/src/models/daos/AddCardDao.java" />
@@ -185,21 +203,26 @@
         <option value="$PROJECT_DIR$/web/login-test-page.xhtml" />
         <option value="$PROJECT_DIR$/web/projects.xhtml" />
         <option value="$PROJECT_DIR$/web/login.xhtml" />
-        <option value="$PROJECT_DIR$/web/base.xhtml" />
         <option value="$PROJECT_DIR$/src/beans/AuthBean.java" />
         <option value="$PROJECT_DIR$/web/create-account.xhtml" />
         <option value="$PROJECT_DIR$/src/beans/LoginBean.java" />
         <option value="$PROJECT_DIR$/src/beans/SignupBean.java" />
         <option value="$PROJECT_DIR$/src/models/daos/SignupDao.java" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
         <option value="$PROJECT_DIR$/src/models/SampleInserts.java" />
         <option value="$PROJECT_DIR$/src/models/JoinQueries.java" />
         <option value="$PROJECT_DIR$/src/models/DirectQueries.java" />
         <option value="$PROJECT_DIR$/src/models/entities/Card.java" />
         <option value="$PROJECT_DIR$/src/models/entities/CardType.java" />
-        <option value="$PROJECT_DIR$/src/models/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/models/services/admin/AddCardService.java" />
+        <option value="$PROJECT_DIR$/src/models/services/admin/AddCardTypeService.java" />
         <option value="$PROJECT_DIR$/src/models/entities/Project.java" />
+        <option value="$PROJECT_DIR$/src/models/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
+        <option value="$PROJECT_DIR$/web/start-project.xhtml" />
+        <option value="$PROJECT_DIR$/src/models/services/CreateProjectService.java" />
+        <option value="$PROJECT_DIR$/src/models/daos/CreateProjectDao.java" />
+        <option value="$PROJECT_DIR$/web/base.xhtml" />
       </list>
     </option>
   </component>
@@ -379,7 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DirectQueries">
+  <component name="RunManager" selected="Tomcat Server.Pam's">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -725,9 +748,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.DirectQueries" />
-        <item index="1" class="java.lang.String" itemvalue="Application.JoinQueries" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LoginDao" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LoginDao" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DirectQueries" />
+        <item index="2" class="java.lang.String" itemvalue="Application.JoinQueries" />
         <item index="3" class="java.lang.String" itemvalue="Application.SampleInserts" />
         <item index="4" class="java.lang.String" itemvalue="Application.SignupDao" />
       </list>
@@ -761,7 +784,7 @@
       <workItem from="1514270844300" duration="5000" />
       <workItem from="1514270864279" duration="1471000" />
       <workItem from="1514272587487" duration="42114000" />
-      <workItem from="1514328669245" duration="8877000" />
+      <workItem from="1514328669245" duration="12948000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: commented out LoginDao test case">
       <created>1514299601719</created>
@@ -812,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514341578537</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="CheckPoint - test cases">
+      <created>1514349611256</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1514349611256</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85389000" />
+    <option name="totallyTimeSpent" value="89460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -845,8 +875,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32580644" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4139785" sideWeight="0.49813333" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13066667" sideWeight="0.52110094" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13066667" sideWeight="0.4788991" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13066667" sideWeight="0.43486238" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13066667" sideWeight="0.5651376" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -902,7 +932,8 @@
     <MESSAGE value="fixed signup feature" />
     <MESSAGE value="SIGN IN PAGE BROKEN. Fixed mistaken setter call at login page." />
     <MESSAGE value="sign in feature operational" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in feature operational" />
+    <MESSAGE value="CheckPoint - test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="CheckPoint - test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -925,35 +956,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/beans/adminbeans/CardTypeConverter.java" />
-    <entry file="file://$PROJECT_DIR$/src/beans/adminbeans/CardTypeManagedBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/beans/adminbeans/ProjectConverter.java" />
-    <entry file="file://$PROJECT_DIR$/src/beans/adminbeans/UserConverter.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/entities/Main.java" />
-    <entry file="uml://Persistence/JavaeeElement:/aa497482/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/aa497482/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="" y="">User#file://C:/Users/User/Documents/GitHub/GovFundMe/Application/src/models/entities/User.java</node>
-            <node x="" y="">CardType#file://C:/Users/User/Documents/GitHub/GovFundMe/Application/src/models/entities/CardType.java</node>
-            <node x="" y="">Project#file://C:/Users/User/Documents/GitHub/GovFundMe/Application/src/models/entities/Project.java</node>
-            <node x="" y="">Card#file://C:/Users/User/Documents/GitHub/GovFundMe/Application/src/models/entities/Card.java</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.200284090909091" x="93.0" y="221.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Embeddables</Category>
-            <Category>Properties</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
       <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
         <state />
@@ -976,68 +978,6 @@
           <notes />
           <edges />
           <settings layout="Hierarchic Group" zoom="1.0" x="61.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">models</node>
-            <node x="" y="">images</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">org</node>
-            <node x="" y="">clojure</node>
-            <node x="" y="">antlr</node>
-            <node x="" y="">toolbarButtonGraphics</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">database</node>
-            <node x="" y="">groovyjarjarasm</node>
-            <node x="" y="">java</node>
-            <node x="" y="">groovy</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">beans</node>
-            <node x="" y="">groovyjarjarcommonscli</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">groovyjarjarantlr</node>
-            <node x="" y="">javassist</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="238.0" y="274.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/models.daos.LoginDao">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>models.daos.LoginDao</OriginalElement>
-          <nodes>
-            <node x="" y="">models.daos.LoginDao</node>
-            <node x="" y="">models.services.LoginService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="58.0" y="54.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1092,40 +1032,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/base.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="99" column="107" lean-forward="true" selection-start-line="99" selection-start-column="107" selection-end-line="99" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/AuthBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#418#419#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/create-account.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1300,14 +1210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/daos/LoginDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1339,29 +1241,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/models/DirectQueries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="128" column="39" lean-forward="false" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+        <state relative-caret-position="344">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/services/admin/AddCardTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">models</node>
+            <node x="" y="">images</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">org</node>
+            <node x="" y="">clojure</node>
+            <node x="" y="">antlr</node>
+            <node x="" y="">toolbarButtonGraphics</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">database</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">beans</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">groovyjarjarantlr</node>
+            <node x="" y="">javassist</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8694885361552028" x="238.33265720081135" y="193.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/models.daos.LoginDao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>models.daos.LoginDao</OriginalElement>
+          <nodes>
+            <node x="" y="">models.daos.LoginDao</node>
+            <node x="" y="">models.services.LoginService</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="57.5" y="54.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/services/ViewProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/create-account.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/AuthBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="123" lean-forward="false" selection-start-line="21" selection-start-column="123" selection-end-line="21" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/services/CreateProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="163" lean-forward="false" selection-start-line="6" selection-start-column="163" selection-end-line="6" selection-end-column="163" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="102" column="38" lean-forward="false" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/DirectQueries.java">
+    <entry file="file://$PROJECT_DIR$/src/models/daos/LoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/entities/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="128" column="38" lean-forward="false" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/daos/CreateProjectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/base.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="102" column="65" lean-forward="false" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
