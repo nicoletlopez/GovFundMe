@@ -87,17 +87,18 @@ public class Project implements Serializable
         this.projectStatus = projectStatus;
     }
 
-    @Basic
-    private String projectCategory;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="categoryId")
+    private Category categoryId;
 
-    public String getProjectCategory()
+    public Category getCategoryId()
     {
-        return projectCategory;
+        return categoryId;
     }
 
-    public void setProjectCategory(String projectCategory)
+    public void setCategoryId(Category projectCategory)
     {
-        this.projectCategory = projectCategory;
+        this.categoryId = projectCategory;
     }
 
     @Basic

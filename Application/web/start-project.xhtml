@@ -25,9 +25,7 @@
                 <div class="row">
                     <div class="col-md-7 form-group">
                         <h:selectOneMenu styleClass="form-control" a:placeholder="Select Categort" value="#{createProjectBean.projectCategory}">
-                            <f:selectItem itemValue="BGY" itemLabel="Barangay Project"/>
-                            <f:selectItem itemValue="CMTY" itemLabel="Community Project"/>
-                            <f:selectItem itemValue="BGY" itemLabel="Barangay Project"/>
+                            <f:selectItems value="#{createProjectBean.categories}"/>
                         </h:selectOneMenu>
                     </div>
                 </div>

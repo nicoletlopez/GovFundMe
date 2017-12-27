@@ -1,10 +1,12 @@
 package beans;
 
 import models.daos.CreateProjectDao;
+import models.entities.Category;
 import models.services.CreateProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import java.util.List;
 
 @ManagedBean
 public class CreateProjectBean
@@ -15,8 +17,11 @@ public class CreateProjectBean
     private String projectDesc;
     private double projectTarget;
 
+
     @ManagedProperty(value="#{authBean.loggedUsername}")
     private String loggedUsername;
+
+    private List<String> categories;
 
     public String getLoggedUsername()
     {
@@ -78,7 +83,22 @@ public class CreateProjectBean
         this.projectTarget = projectTarget;
     }
 
+    public List<String> getCategories()
+    {
+        return categories;
+    }
+
+    public void setCategories(List<String> categories)
+    {
+        this.categories = categories;
+    }
+
     private CreateProjectService createProjectService = new CreateProjectDao();
+
+    public CreateProjectBean()
+    {
+        categories = createProjectService.getAllCategories();
+    }
 
     public String createProject()
     {

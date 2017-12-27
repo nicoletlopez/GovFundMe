@@ -2,6 +2,7 @@ package models;
 
 import models.entities.Card;
 import models.entities.CardType;
+import models.entities.Category;
 import models.entities.User;
 
 import javax.persistence.EntityManager;
@@ -90,6 +91,18 @@ public class SampleInserts
             user4.setUserUsername("user4");
             user4.setCardId(silverCard1);
 
+            Category cat1 = new Category();
+            cat1.setCategoryName("Cleanup");
+
+            Category cat2 = new Category();
+            cat2.setCategoryName("Construction");
+
+            Category cat3 = new Category();
+            cat3.setCategoryName("Community Service");
+
+            Category cat4 = new Category();
+            cat4.setCategoryName("Renovations");
+
 
             em.getTransaction().begin();
 
@@ -108,6 +121,11 @@ public class SampleInserts
             em.persist(user2);
             em.persist(user3);
             em.persist(user4);
+
+            em.persist(cat1);
+            em.persist(cat2);
+            em.persist(cat3);
+            em.persist(cat4);
         } catch (Exception ex)
         {
             em.getTransaction().rollback();
