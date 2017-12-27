@@ -33,7 +33,7 @@ public class Card implements Serializable
         this.cardBalance = cardBalance;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "typeId")
     private CardType typeId;
 
@@ -75,6 +75,8 @@ public class Card implements Serializable
     {
         this.userId = userId;
     }
+
+
 
     public Card()
     {}

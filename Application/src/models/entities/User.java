@@ -87,7 +87,7 @@ public class User implements Serializable
         this.userEmail = userEmail;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userId", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userId", cascade = CascadeType.ALL)
     private List<Project> projects;
 
     public List<Project> getProjects()
@@ -100,7 +100,7 @@ public class User implements Serializable
         this.projects = projects;
     }
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="DonationReceipt",
     joinColumns = {@JoinColumn(name="userId")},
     inverseJoinColumns = {@JoinColumn(name="projectId")})

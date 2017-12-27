@@ -112,7 +112,7 @@ public class Project implements Serializable
         this.projectImage = projectImage;
     }
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="userId")
     private User userId;
 
@@ -126,7 +126,7 @@ public class Project implements Serializable
         this.userId = userId;
     }
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="DonationReceipt",
             joinColumns = {@JoinColumn(name="projectId")},
             inverseJoinColumns = {@JoinColumn(name="UserId")})

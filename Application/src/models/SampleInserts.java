@@ -18,6 +18,7 @@ public class SampleInserts
     public void setSampleData()
     {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
 
         CardType platinum = new CardType("Platinum");
         CardType silver = new CardType("Silver");
@@ -76,7 +77,7 @@ public class SampleInserts
         user4.setUserUsername("user4");
         user4.setCardId(silverCard1);
 
-        EntityManager em = entityManagerFactory.createEntityManager();
+
         em.getTransaction().begin();
 
         em.persist(platinum);

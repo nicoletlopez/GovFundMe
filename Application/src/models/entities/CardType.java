@@ -2,9 +2,12 @@ package models.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
+@NamedQuery(name="CardType.findAllCard", query = "select cardType from CardType cardType")
 public class CardType implements Serializable
 {
     @Id
@@ -34,7 +37,7 @@ public class CardType implements Serializable
         this.typeName = typeName;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "typeId", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "typeId", cascade = CascadeType.ALL)
     private List<Card> cards;
 
     public List<Card> getCards()
