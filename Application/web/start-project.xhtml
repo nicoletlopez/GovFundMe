@@ -10,7 +10,7 @@
     <ui:define name="body">
         <hr class="xt-hr"/>
         <div class="row">
-            <form>
+            <h:form enctype="multipart/form-data">
             <div class="col-md-7 col-md-offset-4 form-group">
                 <div class="row">
                     <div class="col-md-7">
@@ -19,44 +19,43 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="text" class="form-control" a:placeholder="Project title" required="true" value=""/>
+                        <h:inputText type="text" class="form-control" a:placeholder="Project title" required="true" value="#{createProjectBean.projectName}"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <select class="form-control">
-                            <option value="">Choose a Category</option>
-                            <option>Boutique</option>
-                            <option>Shirt</option>
-                            <option>Pants</option>
-                        </select>
+                        <h:selectOneMenu styleClass="form-control" a:placeholder="Select Categort" value="#{createProjectBean.projectCategory}">
+                            <f:selectItem itemValue="BGY" itemLabel="Barangay Project"/>
+                            <f:selectItem itemValue="CMTY" itemLabel="Community Project"/>
+                            <f:selectItem itemValue="BGY" itemLabel="Barangay Project"/>
+                        </h:selectOneMenu>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="file" class="form-control" required=""/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7 form-group">
-                        <textarea required="" class="form-control" placeholder="Description"></textarea>
+                        <h:inputFile type="file" styleClass="form-control" required="" value="#{createProjectBean.projectImage}"/>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <input type="number" class="form-control" placeholder="Target Funds (e.g. 9999,500)" required="" />
+                        <h:inputTextarea required="" styleClass="form-control" a:placeholder="Description" value="#{createProjectBean.projectDesc}"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7 form-group">
+                        <h:inputText type="" styleClass="form-control" a:placeholder="Target Funds (e.g. 9999,500)" value="#{createProjectBean.projectTarget}" required="" />
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-2 form-group">
-                        <input type="button" value="Start!" class="btn btn-default"/>
+                        <h:commandButton type="submit" value="Fuego!" action="#{createProjectBean.createProject}" styleClass="btn btn-default"/>
                     </div>
                 </div>
             </div>
-            </form>
+            </h:form>
         </div>
     </ui:define>
 

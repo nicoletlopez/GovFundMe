@@ -25,6 +25,7 @@ public class CardType implements Serializable
     }
 
     @Basic
+    @Column(unique = true)
     private String typeName;
 
     public String getTypeName()

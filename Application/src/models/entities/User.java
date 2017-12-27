@@ -2,9 +2,11 @@ package models.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Date;
 import java.util.List;
 
 @Entity
+@NamedQuery(name="User.findUserByUsername", query = "select user from User user where user.userUsername = :userNameParam")
 public class User implements Serializable
 {
     @GeneratedValue
@@ -87,6 +89,7 @@ public class User implements Serializable
         this.userEmail = userEmail;
     }
 
+
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "userId", cascade = CascadeType.ALL)
     private List<Project> projects;
 
@@ -128,6 +131,7 @@ public class User implements Serializable
     {
         isAuthenticated = authenticated;
     }*/
+
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="cardId", unique = true)

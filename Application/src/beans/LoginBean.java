@@ -52,7 +52,7 @@ public class LoginBean
         if (loginService.login(this.username, this.password))
         {
             authBean.setLoggedUsername(this.username);
-            return "projects";
+            return "index";
         }
         else
         {

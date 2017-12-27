@@ -2,7 +2,9 @@ package models.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Date;
 
 @Entity
 public class Project implements Serializable
@@ -110,6 +112,19 @@ public class Project implements Serializable
     public void setProjectImage(String projectImage)
     {
         this.projectImage = projectImage;
+    }
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date date = ;
+
+    public Date getDate()
+    {
+        return date;
+    }
+
+    public void setDate(Date date)
+    {
+        this.date = date;
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
