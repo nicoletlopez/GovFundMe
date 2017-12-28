@@ -1,397 +1,405 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
-      template="base.xhtml">
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="base.xhtml">
 
 
-<ui:define name="title">Home</ui:define>
-   <ui:define name="mobilemenu">
-      <div class="main-color-bg">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-3 left-menu-wrapper">
-                  <div class="xt-sidenav hidden-xs hidden-sm">
-                     <nav>
-                        <ul class="xt-side-menu">
-                           <li>
-                              <a href="#">All Category</a>
-                              <ul class="xt-dropdown">
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml">
-                                       <i class="fa flaticon-glasses"/> FASHION</a>
-                                    <ul class="mega-menu">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Bags</a></li>
-                                             <li><a href="single-shop.xhtml">Funky</a></li>
-                                             <li><a href="single-shop.xhtml">Ear Wear</a></li>
-                                             <li><a href="single-shop.xhtml">Shoes</a></li>
-                                             <li><a href="single-shop.xhtml">Cosmetic</a></li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Shirt</a></li>
-                                             <li><a href="single-shop.xhtml">Pant</a></li>
-                                             <li><a href="single-shop.xhtml">Trousers</a></li>
-                                             <li><a href="single-shop.xhtml">Jackets &amp; sweater</a>
-                                             </li>
-                                             <li><a href="single-shop.xhtml">T-Shirts</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                            class="fa flaticon-dress"/> WOMEN'S</a>
-                                    <ul class="mega-menu">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Accessories</a></li>
-                                             <li><a href="single-shop.xhtml">Ornaments</a></li>
-                                             <li><a href="single-shop.xhtml">Shoes</a></li>
-                                             <li><a href="single-shop.xhtml">3 Piece</a></li>
-                                             <li><a href="single-shop.xhtml">Cosmetic</a></li>
-                                          </ul>
-                                       </li>
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Ring</a></li>
-                                             <li><a href="single-shop.xhtml">Bags</a></li>
-                                             <li><a href="single-shop.xhtml">Ear Wear</a></li>
-                                             <li><a href="single-shop.xhtml">Storage</a></li>
-                                             <li><a href="single-shop.xhtml">Office</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="single-shop.xhtml"><i class="fa flaticon-high-heel"/>
-                                    SHOES</a>
-                                 </li>
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                            class="fa flaticon-v-neck-shirt"/> MAN'S</a>
-                                    <ul class="mega-menu xt-column">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Jeans Pant</a></li>
-                                             <li><a href="single-shop.xhtml">T-Shirts</a></li>
-                                             <li><a href="single-shop.xhtml">Pant</a></li>
-                                             <li><a href="single-shop.xhtml">Jackets</a></li>
-                                             <li><a href="single-shop.xhtml">Cap</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="single-shop.xhtml"><i class="fa flaticon-jacket"/>
-                                    JACKETS</a>
-                                 </li>
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                            class="fa flaticon-cosmetics"/> COSMETICS</a>
-                                    <ul class="mega-menu xt-column">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Lipstick</a></li>
-                                             <li><a href="single-shop.xhtml">Makeup Brush</a></li>
-                                             <li><a href="single-shop.xhtml">Nail Polish</a></li>
-                                             <li><a href="single-shop.xhtml"> Hair Dryers</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                            class="fa flaticon-hijab"/>BOURKHA &amp; HIJAB</a>
-                                    <ul class="mega-menu xt-column">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">Iranian</a></li>
-                                             <li><a href="single-shop.xhtml">Arabian</a></li>
-                                             <li><a href="single-shop.xhtml">Indian</a></li>
-                                             <li><a href="single-shop.xhtml">Indonesian</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a class="xt-nav-link" href="single-shop.xhtml"><i
-                                            class="fa flaticon-jacket-1"/>Coats &amp; Gilets</a>
-                                    <ul class="mega-menu xt-column">
-                                       <li>
-                                          <ul class="xt-single-mega">
-                                             <li><a href="single-shop.xhtml">German Coats</a></li>
-                                             <li><a href="single-shop.xhtml">Bangladeshi Blezzar</a></li>
-                                             <li><a href="single-shop.xhtml">Thailand Gilets</a></li>
-                                             <li><a href="single-shop.xhtml">Indian Coats</a></li>
-                                          </ul>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="single-shop.xhtml"><i
-                                         class="fa flaticon-dress-1"/>Boutique</a>
-                                 </li>
-                                 <li><a href="#"> <i class="fa flaticon-menu"/> More
-                                    Categories</a>
-                                 </li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-
-               <div class="col-md-8 col-sm-10 col-xs-12 xt-header-search">
-                  <div class="form-group xt-form search-bar  col-md-8 col-sm-8 col-xs-7 padding-right-o">
-                     <input class="form-control" placeholder="Search for snippets"/>
-                  </div>
-                  <div class="form-group xt-form xt-search-cat col-md-4 col-sm-4 col-xs-5 padding-left-o ">
-                     <div class="xt-select xt-search-opt">
-                        <h:form>
-                           <h:selectOneMenu class="xt-dropdown-search select-beast">
-
-                           </h:selectOneMenu>
-                        </h:form>
-                     </div>
-                     <div class="xt-search-opt xt-search-btn">
-                        <button type="button" class="btn btn-primary btn-search"><i class="fa fa-search"/>
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </ui:define>
-   <ui:define name="body">
-   <!--
-   |========================
-   |  MOBILE MENU
-   |========================
-   -->
-   <div class="menu-spacing">
-      <div class="container">
-         <div class="row">
-            <div class="mobile-menu-area visible-xs visible-sm">
-               <div class="mobile-menu">
-                  <nav id="mobile-menu-active">
-                     <ul class="main">
-                        <li><a class="main-a" href="">Shirt</a></li>
-                        <li><a class="main-a" href="">Pant</a></li>
-                        <li class="active"><a class="main-a" href="#">Bourkha</a>
-                           <ul>
-                              <li><a href="#">Hijab</a></li>
-                              <li><a href="#">Scarf</a></li>
-                              <li><a href="#" class="main-a">Shirt</a>
-                                 <ul>
-                                    <li><a href="#">T-Shirt</a></li>
-                                    <li><a href="#">Trousers</a></li>
-                                    <li><a href="#">Jackets &amp; sweater</a></li>
-                                    <li><a href="#">3 Piece</a></li>
-                                 </ul>
-                              </li>
-                           </ul>
-                        </li>
-                        <li><a class="main-a" href="">Shawl</a></li>
-                        <li><a class="main-a" href="">Other</a></li>
-                     </ul>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <!--
-   |========================
-   |  SLIDER
-   |========================
-   -->
-      <ui:insert name="content">
-   <section class="xt-slider">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-3 category-hidden padding-right-o"/>
-            <div class="col-md-9 col-md-offset-3 padding-o padding-sm">
-               <div class="flexslider xt-slider-inner">
-                  <ul class="slides">
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-five.jpg" alt=""/>
-                        <div class="slide_text">
-                           <span class="slide-category">Fashion</span>
-                           <h2 class="slide_title">Spring Summer <br/> Fashion Collection</h2>
-                           <p class="slide_byline "> Lorem ipsum dolor sit amet, consectetur adipis
-                              cing elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua ut enim ad minim.</p>
-                           <a href="" class="btn btn-fill ">Shop Now</a>
-                        </div>
-                     </li>
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-four.jpg" alt=""/>
-                        <div class="slide_text">
-                           <span class="slide-category">Style</span>
-                           <h2 class="slide_title ">Winter Autumn <br/> Jacket Collection</h2>
-                           <p class="slide_byline "> Usher in the summer months with showerproof jackets
-                              and lightweight boys' coats. Items are great to be presented
-                              loved ones and the reasonable price makes the collection suitable.</p>
-                           <a href="" class="btn btn-fill ">Shop Now</a>
-                        </div>
-                     </li>
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-three.jpg" alt=""/>
-                        <div class="slide_text">
-                           <span class="slide-category">Spring Collection</span>
-                           <h2 class="slide_title ">Spring Upcomming <br/> New Collection</h2>
-                           <p class="slide_byline "> Bags, Glasses and belts are all of the best quality
-                              and are made by famous brands in this area. Vitrine helped
-                              them to show their products better and sell more.</p>
-                           <a href="" class="btn btn-fill ">Shop Now</a>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-               <div class="flexslider-controls">
-                  <ol class="flex-control-nav">
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-five-thumb.jpg" alt=""/>
-                        <div class="nav-title">
-                           <span>Fashion</span>
-                           <h3>Spring Summer Fashion Collection</h3>
-                        </div>
-
-                     </li>
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-four-thumb.jpg" alt=""/>
-                        <div class="nav-title">
-                           <span>Style</span>
-                           <h3>Winter Autumn Jacket COllection</h3>
-                        </div>
-
-                     </li>
-                     <li>
-                        <img src="#{request.contextPath}/resources/images/model-three-thumb.jpg" alt=""/>
-                        <div class="nav-title">
-                           <span>Spring</span>
-                           <h3>Spring New Collection 2018</h3>
-                        </div>
-
-                     </li>
-                  </ol>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-
-         <!--
-              |========================
-              |  FEATURED SECTION
-              |========================
-              -->
-         <section class="xt-deal-section">
+    <ui:define name="title">Home</ui:define>
+    <ui:define name="mobilemenu">
+        <div class="main-color-bg">
             <div class="container">
-               <div class="row section-separator">
-                  <div class="xt-each-deal">
-                     <div class="col-md-8 col-sm-6">
-                        <div class="xt-spring-deal cover-bg white xt-deal" style="background-image: url(#{resource['images/f1.jpg']});">
-                           <div class="xt-overlay"></div>
-                           <span>fresh your soul</span>
-                           <h2>spring summer <br/> fashion collection</h2>
-                           <a href="" class="btn btn-fill">Shop now</a>
+                <div class="row">
+                    <div class="col-md-3 left-menu-wrapper">
+                        <div class="xt-sidenav hidden-xs hidden-sm">
+                            <nav>
+                                <ul class="xt-side-menu">
+                                    <li>
+                                        <a href="#">Categories</a>
+                                        <ul class="xt-dropdown">
+
+                                            <ui:repeat value="#{navBean.categories}" var="category">
+                                                <li style="border: 1px solid gray; margin:20px; padding:10px;">
+                                                    <a class="xt-nav-link" href="single-shop.xhtml" >
+                                                        <i class="fa fa-hourglass" aria-hidden="true"/>#{category}
+                                                    </a>
+                                                    <!--<ul class="mega-menu">
+                                                       <li>
+                                                          <ul class="xt-single-mega">
+                                                             <li><a href="single-shop.xhtml">Bags</a></li>
+                                                             <li><a href="single-shop.xhtml">Funky</a></li>
+                                                             <li><a href="single-shop.xhtml">Ear Wear</a></li>
+                                                             <li><a href="single-shop.xhtml">Shoes</a></li>
+                                                             <li><a href="single-shop.xhtml">Cosmetic</a></li>
+                                                          </ul>
+                                                       </li>
+                                                       <li>
+                                                          <ul class="xt-single-mega">
+                                                             <li><a href="single-shop.xhtml">Shirt</a></li>
+                                                             <li><a href="single-shop.xhtml">Pant</a></li>
+                                                             <li><a href="single-shop.xhtml">Trousers</a></li>
+                                                             <li><a href="single-shop.xhtml">Jackets &amp; sweater</a>
+                                                             </li>
+                                                             <li><a href="single-shop.xhtml">T-Shirts</a></li>
+                                                          </ul>
+                                                       </li>
+                                                    </ul>-->
+                                                </li>
+                                            </ui:repeat>
+                                            <!--<li>
+                                               <a class="xt-nav-link" href="single-shop.xhtml"><i
+                                                       class="fa flaticon-dress"/> WOMEN'S</a>
+                                               <ul class="mega-menu">
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">Accessories</a></li>
+                                                        <li><a href="single-shop.xhtml">Ornaments</a></li>
+                                                        <li><a href="single-shop.xhtml">Shoes</a></li>
+                                                        <li><a href="single-shop.xhtml">3 Piece</a></li>
+                                                        <li><a href="single-shop.xhtml">Cosmetic</a></li>
+                                                     </ul>
+                                                  </li>
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">Ring</a></li>
+                                                        <li><a href="single-shop.xhtml">Bags</a></li>
+                                                        <li><a href="single-shop.xhtml">Ear Wear</a></li>
+                                                        <li><a href="single-shop.xhtml">Storage</a></li>
+                                                        <li><a href="single-shop.xhtml">Office</a></li>
+                                                     </ul>
+                                                  </li>
+                                               </ul>
+                                            </li>
+                                            <li><a href="single-shop.xhtml"><i class="fa flaticon-high-heel"/>
+                                               SHOES</a>
+                                            </li>
+                                            <li>
+                                               <a class="xt-nav-link" href="single-shop.xhtml"><i
+                                                       class="fa flaticon-v-neck-shirt"/> MAN'S</a>
+                                               <ul class="mega-menu xt-column">
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">Jeans Pant</a></li>
+                                                        <li><a href="single-shop.xhtml">T-Shirts</a></li>
+                                                        <li><a href="single-shop.xhtml">Pant</a></li>
+                                                        <li><a href="single-shop.xhtml">Jackets</a></li>
+                                                        <li><a href="single-shop.xhtml">Cap</a></li>
+                                                     </ul>
+                                                  </li>
+                                               </ul>
+                                            </li>
+                                            <li><a href="single-shop.xhtml"><i class="fa flaticon-jacket"/>
+                                               JACKETS</a>
+                                            </li>
+                                            <li>
+                                               <a class="xt-nav-link" href="single-shop.xhtml"><i
+                                                       class="fa flaticon-cosmetics"/> COSMETICS</a>
+                                               <ul class="mega-menu xt-column">
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">Lipstick</a></li>
+                                                        <li><a href="single-shop.xhtml">Makeup Brush</a></li>
+                                                        <li><a href="single-shop.xhtml">Nail Polish</a></li>
+                                                        <li><a href="single-shop.xhtml"> Hair Dryers</a></li>
+                                                     </ul>
+                                                  </li>
+                                               </ul>
+                                            </li>
+                                            <li>
+                                               <a class="xt-nav-link" href="single-shop.xhtml"><i
+                                                       class="fa flaticon-hijab"/>BOURKHA &amp; HIJAB</a>
+                                               <ul class="mega-menu xt-column">
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">Iranian</a></li>
+                                                        <li><a href="single-shop.xhtml">Arabian</a></li>
+                                                        <li><a href="single-shop.xhtml">Indian</a></li>
+                                                        <li><a href="single-shop.xhtml">Indonesian</a></li>
+                                                     </ul>
+                                                  </li>
+                                               </ul>
+                                            </li>
+                                            <li>
+                                               <a class="xt-nav-link" href="single-shop.xhtml"><i
+                                                       class="fa flaticon-jacket-1"/>Coats &amp; Gilets</a>
+                                               <ul class="mega-menu xt-column">
+                                                  <li>
+                                                     <ul class="xt-single-mega">
+                                                        <li><a href="single-shop.xhtml">German Coats</a></li>
+                                                        <li><a href="single-shop.xhtml">Bangladeshi Blezzar</a></li>
+                                                        <li><a href="single-shop.xhtml">Thailand Gilets</a></li>
+                                                        <li><a href="single-shop.xhtml">Indian Coats</a></li>
+                                                     </ul>
+                                                  </li>
+                                               </ul>
+                                            </li>
+                                            <li><a href="single-shop.xhtml"><i
+                                                    class="fa flaticon-dress-1"/>Boutique</a>
+                                            </li>
+                                            <li><a href="#"> <i class="fa flaticon-menu"/> More
+                                               Categories</a>
+                                            </li>-->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="xt-summer-deal cover-bg white xt-deal" style="background-image: url(#{resource['images/f2.jpg']});">
-                           <div class="xt-overlay"></div>
-                           <span>SAVE 35% ON DESIGNER</span>
-                           <h2>hot summer collection</h2>
-                           <a href="" class="btn btn-fill">Shop now</a>
+                    </div>
+
+                    <div class="col-md-8 col-sm-10 col-xs-12 xt-header-search">
+                        <div class="form-group xt-form search-bar  col-md-8 col-sm-8 col-xs-7 padding-right-o">
+                            <input class="form-control" placeholder="Search for snippets"/>
                         </div>
-                     </div>
-                     <div class="col-md-4 col-sm-6">
-                        <div class="xt-off-deal cover-bg white xt-deal xt-color-bg">
-                           <span>summer collection 2017</span>
-                           <h2 class="xt-deal-price">66<span>%<br/>off</span></h2>
-                           <a href="" class="btn btn-border">Shop now</a>
+                        <div class="form-group xt-form xt-search-cat col-md-4 col-sm-4 col-xs-5 padding-left-o ">
+                            <div class="xt-select xt-search-opt">
+                                <h:form>
+                                    <h:selectOneMenu class="xt-dropdown-search select-beast">
+
+                                    </h:selectOneMenu>
+                                </h:form>
+                            </div>
+                            <div class="xt-search-opt xt-search-btn">
+                                <button type="button" class="btn btn-primary btn-search"><i class="fa fa-search"/>
+                                </button>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-md-8 col-sm-6">
-                        <div class="xt-summer-deal cover-bg white xt-deal" style="background-image: url(#{resource['images/f3.jpg']});">
-                           <div class="xt-overlay"></div>
-                           <span>Winter COllection</span>
-                           <h2>Winter Autumn <br/> Jacket Collection</h2>
-                           <a href="" class="btn btn-fill">Shop now</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </section>
-      </ui:insert>
-   <!--
-   |========================
-   |  FOOTER
-   |========================
-   -->
-   <footer class="xt-footer">
-      <div class="clearfix"/>
-      <div class="footer-middle bg-2">
-         <div class="container">
-            <div class="row section-separator">
-               <div class="col-md-4 col-sm-4">
-                  <div class="footer-widget-2">
-                     <div class="row">
-                        <div class="col-md-2 f-icon">
-                           <i class="fa flaticon-credit-card"/>
+        </div>
+    </ui:define>
+    <ui:define name="body">
+        <!--
+        |========================
+        |  MOBILE MENU
+        |========================
+        -->
+        <div class="menu-spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="mobile-menu-area visible-xs visible-sm">
+                        <div class="mobile-menu">
+                            <nav id="mobile-menu-active">
+                                <ul class="main">
+                                    <li><a class="main-a" href="">Shirt</a></li>
+                                    <li><a class="main-a" href="">Pant</a></li>
+                                    <li class="active"><a class="main-a" href="#">Bourkha</a>
+                                        <ul>
+                                            <li><a href="#">Hijab</a></li>
+                                            <li><a href="#">Scarf</a></li>
+                                            <li><a href="#" class="main-a">Shirt</a>
+                                                <ul>
+                                                    <li><a href="#">T-Shirt</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                    <li><a href="#">Jackets &amp; sweater</a></li>
+                                                    <li><a href="#">3 Piece</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="main-a" href="">Shawl</a></li>
+                                    <li><a class="main-a" href="">Other</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="col-md-10">
-                           <h4>Safe Payment</h4>
-                           <p>Pay with the world’s most popular and secure
-                              payment methods.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-4">
-                  <div class="footer-widget-2">
-                     <div class="row">
-                        <div class="col-md-2 f-icon">
-                           <i class="fa flaticon-shipped"/>
-                        </div>
-                        <div class="col-md-10">
-                           <h4>Worldwide delivery</h4>
-                           <p>With sites in 5 languages, we shop to over 100
-                              countries and regions.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4 col-sm-4">
-                  <div class="footer-widget-2">
-                     <div class="row">
-                        <div class="col-md-2 f-icon">
-                           <i class="fa flaticon-question"/>
-                        </div>
-                        <div class="col-md-10">
-                           <h4>24/7 help center</h4>
-                           <p>Round-the-clock assistance for a smooth
-                              shopping experience.</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </footer>
-   <!--
-   |========================
-   |      Script
-   |========================
-   -->
-   </ui:define>
+        </div>
+
+        <!--
+        |========================
+        |  SLIDER
+        |========================
+        -->
+        <ui:insert name="content">
+            <section class="xt-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 category-hidden padding-right-o"/>
+                        <div class="col-md-9 col-md-offset-3 padding-o padding-sm">
+                            <div class="flexslider xt-slider-inner">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-five.jpg" alt=""/>
+                                        <div class="slide_text">
+                                            <span class="slide-category">Fashion</span>
+                                            <h2 class="slide_title">Spring Summer <br/> Fashion Collection</h2>
+                                            <p class="slide_byline "> Lorem ipsum dolor sit amet, consectetur adipis
+                                                cing elit, sed do eiusmod tempor incididunt ut labore
+                                                et dolore magna aliqua ut enim ad minim.</p>
+                                            <a href="" class="btn btn-fill ">Shop Now</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-four.jpg" alt=""/>
+                                        <div class="slide_text">
+                                            <span class="slide-category">Style</span>
+                                            <h2 class="slide_title ">Winter Autumn <br/> Jacket Collection</h2>
+                                            <p class="slide_byline "> Usher in the summer months with showerproof jackets
+                                                and lightweight boys' coats. Items are great to be presented
+                                                loved ones and the reasonable price makes the collection suitable.</p>
+                                            <a href="" class="btn btn-fill ">Shop Now</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-three.jpg" alt=""/>
+                                        <div class="slide_text">
+                                            <span class="slide-category">Spring Collection</span>
+                                            <h2 class="slide_title ">Spring Upcomming <br/> New Collection</h2>
+                                            <p class="slide_byline "> Bags, Glasses and belts are all of the best quality
+                                                and are made by famous brands in this area. Vitrine helped
+                                                them to show their products better and sell more.</p>
+                                            <a href="" class="btn btn-fill ">Shop Now</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flexslider-controls">
+                                <ol class="flex-control-nav">
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-five-thumb.jpg" alt=""/>
+                                        <div class="nav-title">
+                                            <span>Fashion</span>
+                                            <h3>Spring Summer Fashion Collection</h3>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-four-thumb.jpg" alt=""/>
+                                        <div class="nav-title">
+                                            <span>Style</span>
+                                            <h3>Winter Autumn Jacket COllection</h3>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <img src="#{request.contextPath}/resources/images/model-three-thumb.jpg"
+                                             alt=""/>
+                                        <div class="nav-title">
+                                            <span>Spring</span>
+                                            <h3>Spring New Collection 2018</h3>
+                                        </div>
+
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+                 |========================
+                 |  FEATURED SECTION
+                 |========================
+                 -->
+            <section class="xt-deal-section">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="xt-each-deal">
+                            <div class="col-md-8 col-sm-6">
+                                <div class="xt-spring-deal cover-bg white xt-deal"
+                                     style="background-image: url(#{resource['images/f1.jpg']});">
+                                    <div class="xt-overlay"></div>
+                                    <span>fresh your soul</span>
+                                    <h2>spring summer <br/> fashion collection</h2>
+                                    <a href="" class="btn btn-fill">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="xt-summer-deal cover-bg white xt-deal"
+                                     style="background-image: url(#{resource['images/f2.jpg']});">
+                                    <div class="xt-overlay"></div>
+                                    <span>SAVE 35% ON DESIGNER</span>
+                                    <h2>hot summer collection</h2>
+                                    <a href="" class="btn btn-fill">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="xt-off-deal cover-bg white xt-deal xt-color-bg">
+                                    <span>summer collection 2017</span>
+                                    <h2 class="xt-deal-price">66<span>%<br/>off</span></h2>
+                                    <a href="" class="btn btn-border">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-6">
+                                <div class="xt-summer-deal cover-bg white xt-deal"
+                                     style="background-image: url(#{resource['images/f3.jpg']});">
+                                    <div class="xt-overlay"></div>
+                                    <span>Winter COllection</span>
+                                    <h2>Winter Autumn <br/> Jacket Collection</h2>
+                                    <a href="" class="btn btn-fill">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </ui:insert>
+        <!--
+        |========================
+        |  FOOTER
+        |========================
+        -->
+        <footer class="xt-footer">
+            <div class="clearfix"/>
+            <div class="footer-middle bg-2">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="footer-widget-2">
+                                <div class="row">
+                                    <div class="col-md-2 f-icon">
+                                        <i class="fa flaticon-credit-card"/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h4>Safe Payment</h4>
+                                        <p>Pay with the world’s most popular and secure
+                                            payment methods.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="footer-widget-2">
+                                <div class="row">
+                                    <div class="col-md-2 f-icon">
+                                        <i class="fa flaticon-shipped"/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h4>Worldwide delivery</h4>
+                                        <p>With sites in 5 languages, we shop to over 100
+                                            countries and regions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="footer-widget-2">
+                                <div class="row">
+                                    <div class="col-md-2 f-icon">
+                                        <i class="fa flaticon-question"/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h4>24/7 help center</h4>
+                                        <p>Round-the-clock assistance for a smooth
+                                            shopping experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--
+        |========================
+        |      Script
+        |========================
+        -->
+    </ui:define>
 
 
 </ui:composition>
