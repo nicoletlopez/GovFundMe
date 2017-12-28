@@ -88,7 +88,7 @@ public class Project implements Serializable
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="categoryId")
+    @JoinColumn(name="categoryName", referencedColumnName = "categoryName")
     private Category categoryId;
 
     public Category getCategoryId()

@@ -1,21 +1,30 @@
 package beans;
 
+import com.sun.source.doctree.SerialDataTree;
 import models.daos.CreateProjectDao;
 import models.entities.Category;
 import models.services.CreateProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import java.io.Serializable;
 import java.util.List;
 
 @ManagedBean
-public class CreateProjectBean
+public class CreateProjectBean implements Serializable
 {
     private String projectName;
     private String projectCategory;
     private String projectImage;
     private String projectDesc;
     private double projectTarget;
+
+
+    public CreateProjectBean()
+    {
+        CreateProjectService retrieveAllCategories = new CreateProjectDao();
+        categories = retrieveAllCategories.getAllCategories();
+    }
 
 
     @ManagedProperty(value="#{authBean.loggedUsername}")
@@ -93,15 +102,10 @@ public class CreateProjectBean
         this.categories = categories;
     }
 
-    private CreateProjectService createProjectService = new CreateProjectDao();
-
-    public CreateProjectBean()
-    {
-        categories = createProjectService.getAllCategories();
-    }
 
     public String createProject()
     {
+        CreateProjectService createProjectService = new CreateProjectDao();
         if(createProjectService.createProject(projectName,projectCategory,projectImage,projectDesc,projectTarget,loggedUsername))
         {
             return "index";

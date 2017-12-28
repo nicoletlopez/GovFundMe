@@ -1,10 +1,11 @@
 package models.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Category
+public class Category implements Serializable
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

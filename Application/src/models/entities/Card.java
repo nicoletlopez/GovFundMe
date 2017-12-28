@@ -34,7 +34,7 @@ public class Card implements Serializable
     }
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "typeId")
+    @JoinColumn(name = "typeName", referencedColumnName = "typeName")
     private CardType typeId;
 
     public CardType getTypeId()

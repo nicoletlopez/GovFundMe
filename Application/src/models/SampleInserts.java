@@ -26,7 +26,7 @@ public class SampleInserts
         {
             CardType platinum = new CardType("Platinum");
             CardType silver = new CardType("Silver");
-            CardType gold = new CardType("gold");
+            CardType gold = new CardType("Gold");
 
             Card platinumCard1 = new Card();
             platinumCard1.setCardBalance(5000);
@@ -50,8 +50,8 @@ public class SampleInserts
 
             Card goldCard3 = new Card();
             goldCard3.setCardBalance(400);
-            goldCard2.setCcNum("222222");
-            goldCard2.setTypeId(gold);
+            goldCard3.setCcNum("222222");
+            goldCard3.setTypeId(gold);
 
             Card silverCard1 = new Card();
             silverCard1.setCardBalance(2000);

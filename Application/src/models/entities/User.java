@@ -90,7 +90,7 @@ public class User implements Serializable
     }
 
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "userId", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userId", cascade = CascadeType.ALL)
     private List<Project> projects;
 
     public List<Project> getProjects()
@@ -131,7 +131,6 @@ public class User implements Serializable
     {
         isAuthenticated = authenticated;
     }*/
-
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="cardId", unique = true)
