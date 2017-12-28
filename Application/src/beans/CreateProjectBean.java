@@ -1,6 +1,8 @@
 package beans;
 
+import models.daos.CategoryDao;
 import models.daos.ProjectDao;
+import models.services.CategoryService;
 import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
@@ -17,10 +19,26 @@ public class CreateProjectBean implements Serializable
     private String projectDesc;
     private double projectTarget;
 
+    private List<String> categoriesList;
+
+    public CreateProjectBean()
+    {
+        CategoryService getCategoriesServiceObject = new CategoryDao();
+        categoriesList = getCategoriesServiceObject.getCategories();
+    }
 
     @ManagedProperty(value="#{authBean.loggedUsername}")
     private String loggedUsername;
 
+    public List<String> getCategoriesList()
+    {
+        return categoriesList;
+    }
+
+    public void setCategoriesList(List<String> categoriesList)
+    {
+        this.categoriesList = categoriesList;
+    }
 
     public String getLoggedUsername()
     {
