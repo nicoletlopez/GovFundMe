@@ -3,7 +3,8 @@ package models.daos;
 import models.entities.Category;
 import models.entities.Project;
 import models.entities.User;
-import models.services.CreateProjectService;
+import models.services.CategoryService;
+import models.services.ProjectService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CreateProjectDao implements CreateProjectService
+public class ProjectDao implements ProjectService
 {
 /*    public static void main(String[] args)
     {
-        CreateProjectDao createProjectDao = new CreateProjectDao();
+        ProjectDao createProjectDao = new ProjectDao();
         createProjectDao.createProject("HERO","DANGER","NO IMAGE","A beautiful project",200.89,"user2");
     }*/
     @Override
@@ -29,9 +30,13 @@ public class CreateProjectDao implements CreateProjectService
             EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
             EntityManager em = entityManagerFactory.createEntityManager();
 
+            /*Convert category name to its corresponding category object*/
+
+            CategoryDao.CategoryHelper categoryHelper = new CategoryDao().new CategoryHelper();
+
             Project project = new Project();
             project.setProjectName(projectName);
-            project.setCategoryId(new UserHelper().getCategoryByCategoryName(projectCategory));
+            project.setCategoryId(categoryHelper.CategoryNameToObject(projectCategory));
             project.setProjectImage(projectImage);
             project.setProjectDesc(projectDesc);
             project.setProjectTarget(projectTarget);
@@ -58,28 +63,7 @@ public class CreateProjectDao implements CreateProjectService
             return false;
         }
     }
-    @Override
-    public List<String> getAllCategories()
-    {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
-        EntityManager em = entityManagerFactory.createEntityManager();
-        em.getTransaction().begin();
 
-        TypedQuery<Category> getCategoriesQuery = em.createQuery("select category from Category category", Category.class);
-        List<Category> categories = getCategoriesQuery.getResultList();
-
-        List<String> categoryNameList = new ArrayList<>();
-
-        for(Category category:categories)
-        {
-            categoryNameList.add(category.getCategoryName());
-        }
-
-        em.getTransaction().commit();
-        entityManagerFactory.close();
-
-        return categoryNameList;
-    }
     class UserHelper
     {
         public User getUserByUserName(String userName)
@@ -100,25 +84,27 @@ public class CreateProjectDao implements CreateProjectService
 
             return userLoggedIn;
         }
-
-        public Category getCategoryByCategoryName(String categoryName)
-        {
-            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
-            EntityManager em = entityManagerFactory.createEntityManager();
-
-            em.getTransaction().begin();
-
-            TypedQuery<Category> categoryQuery = em.createQuery("select category from Category category where category.categoryName = :categoryNameParam", Category.class);
-            categoryQuery.setParameter("categoryNameParam", categoryName);
-
-            Category category = categoryQuery.getSingleResult();
-
-            em.getTransaction().commit();
-            entityManagerFactory.close();
-
-            return category;
-        }
     }
+/*    @Override
+    public List<String> getAllCategories()
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+        em.getTransaction().begin();
 
+        TypedQuery<Category> getCategoriesQuery = em.createQuery("select category from Category category", Category.class);
+        List<Category> categories = getCategoriesQuery.getResultList();
 
+        List<String> categoryNameList = new ArrayList<>();
+
+        for(Category category:categories)
+        {
+            categoryNameList.add(category.getCategoryName());
+        }
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+
+        return categoryNameList;
+    }*/
 }

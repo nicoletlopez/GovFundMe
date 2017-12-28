@@ -21,9 +21,9 @@
 
                                             <ui:repeat value="#{navBean.categories}" var="category">
                                                 <li style="border: 1px solid gray; margin:20px; padding:10px;">
-                                                    <a class="xt-nav-link" href="single-shop.xhtml" >
+                                                    <h:outputLink class="xt-nav-link" href="single-shop.xhtml" value="">
                                                         <i class="fa fa-hourglass" aria-hidden="true"/>#{category}
-                                                    </a>
+                                                    </h:outputLink>
                                                     <!--<ul class="mega-menu">
                                                        <li>
                                                           <ul class="xt-single-mega">

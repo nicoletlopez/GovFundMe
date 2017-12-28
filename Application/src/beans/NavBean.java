@@ -1,11 +1,12 @@
 package beans;
 
-import models.daos.CreateProjectDao;
-import models.services.CreateProjectService;
+import models.daos.CategoryDao;
+import models.daos.ProjectDao;
+import models.services.CategoryService;
+import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 import java.util.List;
 
@@ -17,8 +18,8 @@ public class NavBean implements Serializable
 
     public NavBean()
     {
-        CreateProjectService listCategories = new CreateProjectDao();
-        categories = listCategories.getAllCategories();
+        CategoryService listCategories = new CategoryDao();
+        categories = listCategories.getCategories();
     }
 
     public List<String> getCategories()

@@ -1,9 +1,7 @@
 package beans;
 
-import com.sun.source.doctree.SerialDataTree;
-import models.daos.CreateProjectDao;
-import models.entities.Category;
-import models.services.CreateProjectService;
+import models.daos.ProjectDao;
+import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -20,17 +18,9 @@ public class CreateProjectBean implements Serializable
     private double projectTarget;
 
 
-    public CreateProjectBean()
-    {
-        CreateProjectService retrieveAllCategories = new CreateProjectDao();
-        categories = retrieveAllCategories.getAllCategories();
-    }
-
-
     @ManagedProperty(value="#{authBean.loggedUsername}")
     private String loggedUsername;
 
-    private List<String> categories;
 
     public String getLoggedUsername()
     {
@@ -92,21 +82,11 @@ public class CreateProjectBean implements Serializable
         this.projectTarget = projectTarget;
     }
 
-    public List<String> getCategories()
-    {
-        return categories;
-    }
-
-    public void setCategories(List<String> categories)
-    {
-        this.categories = categories;
-    }
-
 
     public String createProject()
     {
-        CreateProjectService createProjectService = new CreateProjectDao();
-        if(createProjectService.createProject(projectName,projectCategory,projectImage,projectDesc,projectTarget,loggedUsername))
+        ProjectService projectService = new ProjectDao();
+        if(projectService.createProject(projectName,projectCategory,projectImage,projectDesc,projectTarget,loggedUsername))
         {
             return "index";
         }
