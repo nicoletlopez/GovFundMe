@@ -90,7 +90,12 @@
                                 <li class="">
                                     <h:link outcome="index">Home</h:link>
                                 </li>
-                                <li><h:link outcome="projects">Projects</h:link></li>
+                                <li>
+                                    <!--NICOLE -> yes, that link looks like that because of the h:form component ;_; required kasi eh -->
+                                    <h:form>
+                                    <h:commandLink action="#{viewProjectsBean.viewAllProjects}">PROJECTS</h:commandLink>
+                                    </h:form>
+                                </li>
                                 <c:if test="#{not empty authBean.loggedUsername}">
                                     <li><h:link outcome="start-project">Start a project</h:link></li>
                                 </c:if>

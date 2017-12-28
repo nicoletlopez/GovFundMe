@@ -32,6 +32,7 @@ public class ProjectDao implements ProjectService
 
             /*Convert category name to its corresponding category object*/
 
+            //instance of inner class CategoryHelper
             CategoryDao.CategoryHelper categoryHelper = new CategoryDao().new CategoryHelper();
 
             Project project = new Project();
@@ -64,6 +65,63 @@ public class ProjectDao implements ProjectService
         }
     }
 
+    @Override
+    public List<Project> getAllProjects()
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        TypedQuery<Project> projectQuery = em.createQuery("select project from Project project order by date desc ",Project.class);
+        List<Project> projects = projectQuery.getResultList();
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+
+        return projects;
+    }
+    @Override
+    public Project getProjectByName(String projectName)
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        TypedQuery<Project> singleProjectQuery = em.createQuery("select project from Project project where project.projectName = :projectNameParam", Project.class);
+        singleProjectQuery.setParameter("projectNameParam",projectName);
+
+        Project project = singleProjectQuery.getSingleResult();
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+
+        return project;
+    }
+    @Override
+    public List<Project> getProjectsByCategory(String categoryName)
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        /*I hate making these workArounds ;_;*/
+        /*CONFOUNDED WORKAROUND*/
+        CategoryDao.CategoryHelper categoryHelper = new CategoryDao().new CategoryHelper();
+        Category tempCategory = categoryHelper.CategoryNameToObject(categoryName);
+        /*CONFOUNDED WORKAROUND*/
+
+        TypedQuery<Project> projectByCategoryQuery = em.createQuery("select projectWithCat from Project projectWithCat where projectWithCat.categoryId = :projectCategoryParam", Project.class);
+        projectByCategoryQuery.setParameter("projectCategoryParam",tempCategory);
+
+        List<Project> projectsByCategory = projectByCategoryQuery.getResultList();
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+        return projectsByCategory;
+    }
     class UserHelper
     {
         public User getUserByUserName(String userName)

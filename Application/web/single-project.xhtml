@@ -24,8 +24,13 @@
                     </div>
                     <div class="col-md-7">
                         <div class="each-product-info">
-                            <h3>Nike Sneaker</h3>
-                            <span class="single-price"><b>Current Price:</b> $260</span>
+                            <h3>#{projectBean.projectName}</h3>
+                            <span class="single-price"><b>Current Balance:</b> #{projectBean.projectBalance}</span><br/>
+                            <span class="single-price"><b>Target Balance:</b>#{projectBean.projectTarget}</span><br/>
+                            <span class="single-price"><b>Status:</b>#{projectBean.projectStatus}</span><br/>
+                            <span class="single-price"><b>Percentage Completion:</b>#{projectBean.percentageCompletion}%</span><br/>
+                            <span class="single-price"><b>Project Starter:</b>#{projectBean.creatorUser}</span><br/>
+                            <span class="single-price"><b>Date Created:</b>#{projectBean.date}</span>
                             <div class="color-select">
                                 Color:
                                 <ul>
@@ -46,14 +51,14 @@
                                 <input type="number" step="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"/>
                             </div>
                             <div class="product-add-cart">
-                                <a href="" class="btn btn-fill">Add to cart</a>
+                                <a href="" class="btn btn-fill">Donate!</a>
                                 <a href="" class="btn liked "><i class="fa fa-heart-o xt-no-color"></i><i class="fa fa-heart xt-color"></i></a>
                             </div>
                             <div class="product-additional-info">
                                 <ul>
-                                    <li><b>Sku:</b>P001</li>
-                                    <li><b>Category:</b><a href="">Fashion and clothings</a>, <a href="">Women</a></li>
-                                    <li><b>Tag:</b> <a href="">Rib</a>, <a href="">Neck</a></li>
+<!--                                    <li><b>Sku:</b>P001</li>-->
+                                    <li><b>Category:</b><a href="#">#{projectBean.category}</a></li>
+<!--                                    <li><b>Tag:</b> <a href="">Rib</a>, <a href="">Neck</a></li>-->
                                 </ul>
                             </div>
                         </div>
@@ -83,18 +88,21 @@
                             <div role="tabpanel" class="tab-pane xt-pane xt-description fade in active" id="description">
                                 <h3>Product Description</h3>
                                 <b>Description</b>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                <p>
+                                    #{projectBean.projectDesc}
+                                    <!--Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                                     Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
                                     amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque
                                     habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                                    feugiat vitae, ultricies eget,</p>
-                                <ul>
+                                    feugiat vitae, ultricies eget,-->
+                                </p>
+<!--                                <ul>
                                     <li> 73.6% Cotton </li>
                                     <li> 24.5% Polyester </li>
                                     <li> 1.9% Elastane </li>
-                                </ul>
-                                <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique
-                                    senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,</p>
+                                </ul>-->
+<!--                                <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique
+                                    senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,</p>-->
                             </div>
                             <div role="tabpanel" class="tab-pane xt-pane xt-review fade" id="comment">
                                 <ul class="item-review">

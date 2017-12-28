@@ -18,35 +18,41 @@
                                     <li>
                                         <a href="#">Categories</a>
                                         <ul class="xt-dropdown">
-
-                                            <ui:repeat value="#{navBean.categories}" var="category">
+                                            <h:form>
                                                 <li style="border: 1px solid gray; margin:20px; padding:10px;">
-                                                    <h:outputLink class="xt-nav-link" href="single-shop.xhtml" value="">
-                                                        <i class="fa fa-hourglass" aria-hidden="true"/>#{category}
-                                                    </h:outputLink>
-                                                    <!--<ul class="mega-menu">
-                                                       <li>
-                                                          <ul class="xt-single-mega">
-                                                             <li><a href="single-shop.xhtml">Bags</a></li>
-                                                             <li><a href="single-shop.xhtml">Funky</a></li>
-                                                             <li><a href="single-shop.xhtml">Ear Wear</a></li>
-                                                             <li><a href="single-shop.xhtml">Shoes</a></li>
-                                                             <li><a href="single-shop.xhtml">Cosmetic</a></li>
-                                                          </ul>
-                                                       </li>
-                                                       <li>
-                                                          <ul class="xt-single-mega">
-                                                             <li><a href="single-shop.xhtml">Shirt</a></li>
-                                                             <li><a href="single-shop.xhtml">Pant</a></li>
-                                                             <li><a href="single-shop.xhtml">Trousers</a></li>
-                                                             <li><a href="single-shop.xhtml">Jackets &amp; sweater</a>
-                                                             </li>
-                                                             <li><a href="single-shop.xhtml">T-Shirts</a></li>
-                                                          </ul>
-                                                       </li>
-                                                    </ul>-->
+                                                <h:commandLink styleClass="xt-nav-link" action="#{viewProjectsBean.viewAllProjects}">
+                                                    <i class="fa fa-address-book" aria-hidden="true"/>All
+                                                </h:commandLink>
                                                 </li>
-                                            </ui:repeat>
+                                                <ui:repeat value="#{navBean.categories}" var="category">
+                                                    <li style="border: 1px solid gray; margin:20px; padding:10px;">
+                                                        <h:commandLink styleClass="xt-nav-link" action="#{viewProjectsBean.viewProjectByCategory(category)}">
+                                                            <i class="fa fa-hourglass" aria-hidden="true"/>#{category}
+                                                        </h:commandLink>
+                                                        <!--<ul class="mega-menu">
+                                                           <li>
+                                                              <ul class="xt-single-mega">
+                                                                 <li><a href="single-shop.xhtml">Bags</a></li>
+                                                                 <li><a href="single-shop.xhtml">Funky</a></li>
+                                                                 <li><a href="single-shop.xhtml">Ear Wear</a></li>
+                                                                 <li><a href="single-shop.xhtml">Shoes</a></li>
+                                                                 <li><a href="single-shop.xhtml">Cosmetic</a></li>
+                                                              </ul>
+                                                           </li>
+                                                           <li>
+                                                              <ul class="xt-single-mega">
+                                                                 <li><a href="single-shop.xhtml">Shirt</a></li>
+                                                                 <li><a href="single-shop.xhtml">Pant</a></li>
+                                                                 <li><a href="single-shop.xhtml">Trousers</a></li>
+                                                                 <li><a href="single-shop.xhtml">Jackets &amp; sweater</a>
+                                                                 </li>
+                                                                 <li><a href="single-shop.xhtml">T-Shirts</a></li>
+                                                              </ul>
+                                                           </li>
+                                                        </ul>-->
+                                                    </li>
+                                                </ui:repeat>
+                                            </h:form>
                                             <!--<li>
                                                <a class="xt-nav-link" href="single-shop.xhtml"><i
                                                        class="fa flaticon-dress"/> WOMEN'S</a>
