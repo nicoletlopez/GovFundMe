@@ -1,14 +1,22 @@
 package beans;
 
+import models.daos.DonationDao;
+import models.daos.DonationServiceLayer;
 import models.daos.ProjectDao;
 import models.entities.Project;
+import models.services.DonationService;
 import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+import java.io.Serializable;
 import java.util.Date;
 
 @ManagedBean
-public class ProjectBean
+@SessionScoped
+public class ProjectBean implements Serializable
 {
     private int projectId;
     private Date date;
@@ -20,7 +28,12 @@ public class ProjectBean
     private double projectTarget;
     private String category;
     private String creatorUser;
-    private String percentageCompletion;
+    private double percentageCompletion;
+    private double donation;
+    private String infoMessage;
+
+    @ManagedProperty(value = "#{authBean}")
+    private AuthBean user;
 
     public String viewProject(String projectName)
     {
@@ -36,8 +49,61 @@ public class ProjectBean
         this.projectTarget = project.getProjectTarget();
         this.category = project.getCategoryId().getCategoryName();
         this.creatorUser = project.getUserId().getUserUsername();
-        this.percentageCompletion = Double.toString((this.projectBalance/this.projectTarget) * 100.00);
+        this.percentageCompletion = this.projectBalance/this.projectTarget * 100.00;
         return "single-project";
+    }
+
+    public void donateToProject(String projectName)
+    {
+        DonationServiceLayer donationObjectInBean = new DonationDao();
+
+        /*ANOTHER DUMB WORKAROUND*/
+        ProjectService getSingleProjectService = new ProjectDao();
+        Project project = getSingleProjectService.getProjectByName(projectName);
+        /*ANOTHER DUMB WORKAROUND*/
+
+        if(donationObjectInBean.donate(this.user.getLoggedUsername(),project,this.donation))
+        {
+            /*Add the funds deducted from the card to the project*/
+            DonationService addToBalanceObject = new ProjectDao();
+            addToBalanceObject.addToProjectBalance(project,donation);
+
+            this.infoMessage = "Successfully donated " + donation + " to "  + projectName;
+            this.projectId = project.getProjectId();
+            this.date = project.getDate();
+            this.projectBalance = project.getProjectBalance();
+            this.projectDesc = project.getProjectDesc();
+            this.projectImage = project.getProjectImage();
+            this.projectName = project.getProjectName();
+            this.projectStatus = project.getProjectStatus();
+            this.projectTarget = project.getProjectTarget();
+            this.category = project.getCategoryId().getCategoryName();
+            this.creatorUser = project.getUserId().getUserUsername();
+            this.percentageCompletion =this.projectBalance/this.projectTarget * 100.00;
+            //FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+            viewProject(this.projectName);
+        }
+        else
+        {
+            this.infoMessage = "Insufficient Funds";
+            this.projectId = project.getProjectId();
+            this.date = project.getDate();
+            this.projectBalance = project.getProjectBalance();
+            this.projectDesc = project.getProjectDesc();
+            this.projectImage = project.getProjectImage();
+            this.projectName = project.getProjectName();
+            this.projectStatus = project.getProjectStatus();
+            this.projectTarget = project.getProjectTarget();
+            this.category = project.getCategoryId().getCategoryName();
+            this.creatorUser = project.getUserId().getUserUsername();
+            this.percentageCompletion = this.projectBalance/this.projectTarget * 100.00;
+            viewProject(this.projectName);
+        }
+
+    }
+    public String redirect()
+    {
+        return "index";
     }
 
     public int getProjectId()
@@ -140,13 +206,45 @@ public class ProjectBean
         this.creatorUser = creatorUser;
     }
 
-    public String getPercentageCompletion()
+    public double getPercentageCompletion()
     {
+        this.percentageCompletion = (this.projectBalance/this.projectTarget) * 100;
         return percentageCompletion;
     }
 
-    public void setPercentageCompletion(String percentageCompletion)
+    public void setPercentageCompletion(double percentageCompletion)
     {
         this.percentageCompletion = percentageCompletion;
     }
+
+    public AuthBean getUser()
+    {
+        return user;
+    }
+
+    public void setUser(AuthBean user)
+    {
+        this.user = user;
+    }
+
+    public double getDonation()
+    {
+        return donation;
+    }
+
+    public void setDonation(double donation)
+    {
+        this.donation = donation;
+    }
+
+    public String getInfoMessage()
+    {
+        return infoMessage;
+    }
+
+    public void setInfoMessage(String infoMessage)
+    {
+        this.infoMessage = infoMessage;
+    }
+
 }

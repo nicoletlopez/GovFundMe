@@ -9,9 +9,6 @@
     <title>Sample page</title>
 </h:head>
 <h:body>
-    <h:form>
-        <h:outputText value="#{sampleBean.message}"/>
-        <h:commandButton type="submit" action="#{sampleBean.redirect('MESSAGE')}"/>
-    </h:form>
+    <p>#{authBean.loggedUsername}</p>
 </h:body>
 </html>

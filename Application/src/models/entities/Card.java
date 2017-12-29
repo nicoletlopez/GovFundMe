@@ -64,6 +64,7 @@ public class Card implements Serializable
     }
 
     @OneToOne(fetch = FetchType.EAGER, mappedBy = "cardId", cascade = CascadeType.ALL)
+/*    @JoinColumn(name="userId")*/
     private User userId;
 
     public User getUserId()

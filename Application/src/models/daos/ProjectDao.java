@@ -1,9 +1,12 @@
 package models.daos;
 
+import models.InsufficientFundsException;
+import models.entities.Card;
 import models.entities.Category;
 import models.entities.Project;
 import models.entities.User;
 import models.services.CategoryService;
+import models.services.DonationService;
 import models.services.ProjectService;
 
 import javax.persistence.EntityManager;
@@ -15,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ProjectDao implements ProjectService
+public class ProjectDao extends DonationServiceLayer implements ProjectService
 {
 /*    public static void main(String[] args)
     {
@@ -121,6 +124,43 @@ public class ProjectDao implements ProjectService
         em.getTransaction().commit();
         entityManagerFactory.close();
         return projectsByCategory;
+    }
+    /*Adds a user object in the PROJECT entity's List<Project> a donor*/
+    @Override
+    public void userDonatesToProject(User user, Project project)
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        List<User> userDonors = new ArrayList<>();
+
+        userDonors = project.getUsersDonated();
+        userDonors.add(user);
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+    }
+    @Override
+    public void addToProjectBalance(Project project, double donation)
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        TypedQuery<Project> projectQuery = em.createQuery("select project from Project project where project = :projectObjectParam", Project.class);
+        projectQuery.setParameter("projectObjectParam", project);
+
+        project = projectQuery.getSingleResult();
+
+        double newProjectBalance = (project.getProjectBalance() + donation);
+        project.setProjectBalance(newProjectBalance);
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+
     }
     class UserHelper
     {

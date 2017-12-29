@@ -5,132 +5,141 @@
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
                 template="projects.xhtml">
 
-    <ui:define name="title">Project - </ui:define>
-<ui:define name="project">
-<section class="xt-xt-single-product">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 padding-o">
-                <div class="xt-product-inner">
-                    <div class="col-md-5">
-                        <div role="tabpanel" class="tab-pane active xt-product-tab">
-                            <div class="tab-content xt-pro-small-image">
-                                <!-- Tab panel-->
-                                <div role="tabpanel" id="xt-pro-1" class="tab-pane fade active in">
-                                        <img src="#{resource['images/s-1.jpg']}" alt="" class="img-responsive"/>
+    <ui:define name="title">Project - #{projectBean.projectName}</ui:define>
+    <ui:define name="project">
+        <section class="xt-xt-single-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 padding-o">
+                        <div class="xt-product-inner">
+                            <div class="col-md-5">
+                                <div role="tabpanel" class="tab-pane active xt-product-tab">
+                                    <div class="tab-content xt-pro-small-image">
+                                        <!-- Tab panel-->
+                                        <div role="tabpanel" id="xt-pro-1" class="tab-pane fade active in">
+                                            <img src="#{resource['images/s-1.jpg']}" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="each-product-info">
+                                    <h3>#{projectBean.projectName}</h3>
+                                    <span class="single-price"><b>Current Balance:</b> #{projectBean.projectBalance}</span><br/>
+                                    <span class="single-price"><b>Target Balance:</b>#{projectBean.projectTarget}</span><br/>
+                                    <span class="single-price"><b>Status:</b>#{projectBean.projectStatus}</span><br/>
+                                    <span class="single-price"><b>Percentage Completion:</b>#{projectBean.percentageCompletion}%</span><br/>
+                                    <span class="single-price"><b>Project Starter:</b>#{projectBean.creatorUser}</span><br/>
+                                    <span class="single-price"><b>Date Created:</b>#{projectBean.date}</span>
+                                    <span class="single-price"><b>Message:</b>#{projectBean.infoMessage}</span>
+                                    <div class="color-select">
+                                        Color:
+                                        <ul>
+                                            <li class="red-bg selected"><i class="fa fa-check"></i></li>
+                                            <li class="green-bg"><i class="fa fa-check"></i></li>
+                                            <li class="blue-bg"><i class="fa fa-check"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="select-size">
+                                        Size:
+                                        <ul>
+                                            <li class="selected">M</li>
+                                            <li>L</li>
+                                            <li>XL</li>
+                                        </ul>
+                                    </div>
+                                    <h:form>
+                                        <div class="select-quantity">
+                                            <h:inputText type="number" step="1" name="quantity" title="Qty"
+                                                         styleClass="input-text qty text" size="4"
+                                                         value="#{projectBean.donation}"/>
+                                        </div>
+                                        <div class="product-add-cart">
+                                                <h:commandLink href="" class="btn btn-fill" action="#{projectBean.donateToProject(projectBean.projectName)}">Donate!</h:commandLink>
+                                            <i class="fa fa-heart-o xt-no-color">
+                                            </i><i class="fa fa-heart xt-color"></i>
+                                        </div>
+                                    </h:form>
+                                    <div class="product-additional-info">
+                                        <ul>
+                                            <!--                                    <li><b>Sku:</b>P001</li>-->
+                                            <li><b>Category:</b><a href="#">#{projectBean.category}</a></li>
+                                            <!--                                    <li><b>Tag:</b> <a href="">Rib</a>, <a href="">Neck</a></li>-->
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="each-product-info">
-                            <h3>#{projectBean.projectName}</h3>
-                            <span class="single-price"><b>Current Balance:</b> #{projectBean.projectBalance}</span><br/>
-                            <span class="single-price"><b>Target Balance:</b>#{projectBean.projectTarget}</span><br/>
-                            <span class="single-price"><b>Status:</b>#{projectBean.projectStatus}</span><br/>
-                            <span class="single-price"><b>Percentage Completion:</b>#{projectBean.percentageCompletion}%</span><br/>
-                            <span class="single-price"><b>Project Starter:</b>#{projectBean.creatorUser}</span><br/>
-                            <span class="single-price"><b>Date Created:</b>#{projectBean.date}</span>
-                            <div class="color-select">
-                                Color:
-                                <ul>
-                                    <li class="red-bg selected"><i class="fa fa-check"></i></li>
-                                    <li class="green-bg"><i class="fa fa-check"></i></li>
-                                    <li class="blue-bg"><i class="fa fa-check"></i></li>
-                                </ul>
-                            </div>
-                            <div class="select-size">
-                                Size:
-                                <ul>
-                                    <li class="selected">M</li>
-                                    <li>L</li>
-                                    <li>XL</li>
-                                </ul>
-                            </div>
-                            <div class="select-quantity">
-                                <input type="number" step="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"/>
-                            </div>
-                            <div class="product-add-cart">
-                                <a href="" class="btn btn-fill">Donate!</a>
-                                <a href="" class="btn liked "><i class="fa fa-heart-o xt-no-color"></i><i class="fa fa-heart xt-color"></i></a>
-                            </div>
-                            <div class="product-additional-info">
-                                <ul>
-<!--                                    <li><b>Sku:</b>P001</li>-->
-                                    <li><b>Category:</b><a href="#">#{projectBean.category}</a></li>
-<!--                                    <li><b>Tag:</b> <a href="">Rib</a>, <a href="">Neck</a></li>-->
-                                </ul>
+                </div>
+            </div>
+        </section>
+        <div class="xt-product-description">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-md-9">
+                        <div class="xt-single-item-info">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs xt-single-item-tab" role="tablist" id="xt-product-dec-nav">
+                                <li role="presentation" class="active">
+                                    <a href="#description" aria-controls="description" role="tab"
+                                       data-toggle="tab">Description</a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#comment" aria-controls="comment" role="tab"
+                                       data-toggle="tab">Comments(3)</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content xt-tab-content">
+                                <div role="tabpanel" class="tab-pane xt-pane xt-description fade in active"
+                                     id="description">
+                                    <h3>Product Description</h3>
+                                    <b>Description</b>
+                                    <p>
+                                        #{projectBean.projectDesc}
+                                        <!--Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+                                        amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque
+                                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                                        feugiat vitae, ultricies eget,-->
+                                    </p>
+                                    <!--                                <ul>
+                                                                        <li> 73.6% Cotton </li>
+                                                                        <li> 24.5% Polyester </li>
+                                                                        <li> 1.9% Elastane </li>
+                                                                    </ul>-->
+                                    <!--                                <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique
+                                                                        senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,</p>-->
+                                </div>
+                                <div role="tabpanel" class="tab-pane xt-pane xt-review fade" id="comment">
+                                    <ul class="item-review">
+                                        <li>
+                                            <h4>Angel Brown</h4>
+                                            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                                butcher voluptate nisi qui</p>
+                                        </li>
+                                        <li>
+                                            <h4>Mark Monster</h4>
+                                            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                                butcher voluptate nisi qui</p>
+                                        </li>
+                                        <li>
+                                            <h4>Lol Brown</h4>
+                                            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
+                                                butcher voluptate nisi qui</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    <div class="xt-product-description">
-        <div class="container">
-            <div class="row section-separator">
-                <div class="col-md-9">
-                    <div class="xt-single-item-info">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs xt-single-item-tab" role="tablist" id="xt-product-dec-nav">
-                            <li role="presentation" class="active">
-                                <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a>
-                            </li>
-                            <li role="presentation" class="">
-                                <a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">Comments(3)</a>
-                            </li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content xt-tab-content">
-                            <div role="tabpanel" class="tab-pane xt-pane xt-description fade in active" id="description">
-                                <h3>Product Description</h3>
-                                <b>Description</b>
-                                <p>
-                                    #{projectBean.projectDesc}
-                                    <!--Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-                                    amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque
-                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                                    feugiat vitae, ultricies eget,-->
-                                </p>
-<!--                                <ul>
-                                    <li> 73.6% Cotton </li>
-                                    <li> 24.5% Polyester </li>
-                                    <li> 1.9% Elastane </li>
-                                </ul>-->
-<!--                                <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique
-                                    senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,</p>-->
-                            </div>
-                            <div role="tabpanel" class="tab-pane xt-pane xt-review fade" id="comment">
-                                <ul class="item-review">
-                                    <li>
-                                        <h4>Angel Brown</h4>
-                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
-                                            butcher voluptate nisi qui</p>
-                                    </li>
-                                    <li>
-                                        <h4>Mark Monster</h4>
-                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
-                                            butcher voluptate nisi qui</p>
-                                    </li>
-                                    <li>
-                                        <h4>Lol Brown</h4>
-                                        <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel,
-                                            butcher voluptate nisi qui</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-</ui:define>
+    </ui:define>
 
 </ui:composition>
