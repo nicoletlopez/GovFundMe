@@ -7,6 +7,7 @@ import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import javax.servlet.http.Part;
 import java.io.Serializable;
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class CreateProjectBean implements Serializable
     private String projectImage;
     private String projectDesc;
     private double projectTarget;
+    private Part image;
 
     private List<String> categoriesList;
 
@@ -100,11 +102,20 @@ public class CreateProjectBean implements Serializable
         this.projectTarget = projectTarget;
     }
 
+    public Part getImage() {
+        return image;
+    }
+
+    public void setImage(Part image) {
+        this.image = image;
+    }
 
     public String createProject()
     {
+        UploadBean uploadBean = new UploadBean();
+        String projectImageFileName = uploadBean.doUpload(image);
         ProjectService projectService = new ProjectDao();
-        if(projectService.createProject(projectName,projectCategory,projectImage,projectDesc,projectTarget,loggedUsername))
+        if(projectService.createProject(projectName,projectCategory,projectImageFileName,projectDesc,projectTarget,loggedUsername))
         {
             return "index";
         }

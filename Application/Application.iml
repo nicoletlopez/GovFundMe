@@ -42,5 +42,6 @@
     <orderEntry type="library" name="Hibernate 5.2.12-5.2.12" level="project" />
     <orderEntry type="library" name="JPA 2.0-2.0" level="project" />
     <orderEntry type="module" module-name="govfundme-maven" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
