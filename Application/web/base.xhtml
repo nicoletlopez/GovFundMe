@@ -104,13 +104,13 @@
                                 </c:if>
                                 <c:if test="#{not empty authBean.loggedUsername}">
                                     <li class="dropdown xt-drop-nav">
-                                        <a href="my-account.jsf" class="dropdown-toggle" data-hover="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-hover="dropdown" aria-disabled="true">
                                             #{authBean.loggedUsername} <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <h:form>
-                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink>
-                                                </li>
+                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
+                                                <li><h:commandLink action="#{profileBean.viewProfile}">Profile</h:commandLink></li>
                                             </h:form>
                                         </ul>
                                     </li>
