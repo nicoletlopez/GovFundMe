@@ -104,13 +104,14 @@
                                 </c:if>
                                 <c:if test="#{not empty authBean.loggedUsername}">
                                     <li class="dropdown xt-drop-nav">
-                                        <a href="#" class="dropdown-toggle" data-hover="dropdown" aria-disabled="true">
+                                        <a class="dropdown-toggle" data-toggle="collapse" data-hover="dropdown" aria-disabled="true">
                                             #{authBean.loggedUsername} <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <h:form>
-                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
                                                 <li><h:commandLink action="#{profileBean.viewProfile}">Profile</h:commandLink></li>
+                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
+
                                             </h:form>
                                         </ul>
                                     </li>
@@ -122,7 +123,7 @@
             </nav>
         </div>
         <!--Mobile Menu-->
-        <ui:insert name="mobilemenu">
+        <ui:insert name="category">
         </ui:insert>
     </header>
     <ui:insert name="body"/>
