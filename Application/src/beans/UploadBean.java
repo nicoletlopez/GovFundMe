@@ -2,6 +2,10 @@ package beans;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import javax.faces.application.FacesMessage;
+import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.Part;
 public class UploadBean {
@@ -37,4 +41,14 @@ public class UploadBean {
         }
         return null;
     }
+
+    /*public void validateFile(FacesContext ctx, UIComponent comp, Object value)
+    {
+        List<FacesMessage> msgs = new ArrayList<>();
+        Part file = (Part) value;
+        if(file.getSize() < 0)
+        {
+            System.out.println("Picture needed");
+        }
+    }*/
 }
