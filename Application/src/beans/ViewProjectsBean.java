@@ -15,11 +15,13 @@ import java.util.List;
 public class ViewProjectsBean implements Serializable
 {
     private List<Project> projects;
+    private String category;
 
     public String viewAllProjects()
     {
         ProjectService getProjects = new ProjectDao();
         projects = getProjects.getAllProjects();
+        this.category = "All";
         return "projects";
     }
 
@@ -27,6 +29,7 @@ public class ViewProjectsBean implements Serializable
     {
         ProjectService projectByCategory = new ProjectDao();
         projects = projectByCategory.getProjectsByCategory(categoryName);
+        this.category = categoryName;
         return "projects";
     }
 
@@ -38,5 +41,15 @@ public class ViewProjectsBean implements Serializable
     public void setProjects(List<Project> projects)
     {
         this.projects = projects;
+    }
+
+    public String getCategory()
+    {
+        return category;
+    }
+
+    public void setCategory(String category)
+    {
+        this.category = category;
     }
 }
