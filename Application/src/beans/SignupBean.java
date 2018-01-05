@@ -135,7 +135,7 @@ public class SignupBean
             {
                 authBean.setLoggedUsername(this.username);
                 this.infoMessage = "Successfully registered";
-                return "projects";
+                return "start-project";
             }
             else
             {
