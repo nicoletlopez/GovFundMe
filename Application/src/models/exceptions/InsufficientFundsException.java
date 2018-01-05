@@ -1,4 +1,4 @@
-package models;
+package models.exceptions;
 
 public class InsufficientFundsException extends Exception {
   public InsufficientFundsException() { super(); }

@@ -1,6 +1,6 @@
 package models.services;
 
-import models.InsufficientFundsException;
+import models.exceptions.InsufficientFundsException;
 import models.entities.Project;
 import models.entities.User;
 
