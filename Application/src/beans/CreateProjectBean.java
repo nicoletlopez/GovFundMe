@@ -112,16 +112,28 @@ public class CreateProjectBean implements Serializable
 
     public String createProject()
     {
+        ProjectService projectService = new ProjectDao();
         UploadBean uploadBean = new UploadBean();
         String projectImageFileName = uploadBean.doUpload(image);
-        ProjectService projectService = new ProjectDao();
-        if(projectService.createProject(projectName,projectCategory,projectImageFileName,projectDesc,projectTarget,loggedUsername))
-        {
-            return "index";
-        }
-        else
-        {
-            return "projects";
+        if(projectImageFileName.equals("")){
+            if(projectService.createProject(projectName,projectCategory,"defaultproj.jpg",projectDesc,projectTarget,loggedUsername))
+            {
+                return "index";
+            }
+            else
+            {
+                return "start-project";
+            }
+        }else{
+            if(projectService.createProject(projectName,projectCategory,projectImageFileName,projectDesc,projectTarget,loggedUsername))
+            {
+                return "index";
+            }
+            else
+            {
+                return "start-project";
+            }
+
         }
     }
 }

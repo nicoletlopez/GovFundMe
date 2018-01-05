@@ -105,7 +105,7 @@
                                 <c:if test="#{not empty authBean.loggedUsername}">
                                         <li class="dropdown xt-drop-nav">
                                             <a class="dropdown-toggle" data-toggle="collapse" data-hover="dropdown" aria-disabled="true">
-                                                #{authBean.loggedUsername} <span class="caret"></span>
+                                                <img style="border-radius:50%;" src="#{request.contextPath}/uploads/#{profilePictureBean.profiler()}" alt="" height="25" width="25"/> #{authBean.loggedUsername} <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <h:form>
@@ -113,14 +113,6 @@
                                                     <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
                                                 </h:form>
                                             </ul>
-                                            <!--
-                                            insert tha bean here that will call the picture the code should look like something like this
-
-                                            <h:graphicImage value="#{request.contentPath}/uploads/profile/#{user.userProfilePic}" height="30" width="30"/>
-                                            -->
-                                                <img src="#{request.contextPath}/uploads/#{profilePictureBean.profiler()}" alt="" height="50" width="50"/>
-
-
 
                                         </li>
                                 </c:if>
