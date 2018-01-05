@@ -19,9 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- FAV AND ICONS   -->
     <link rel="icon" href="#{resource['images/favicon.ico']}"/>
-    <link rel="icon" type="image/png" href="#{resource['images/apple-icon.png']}"/>
-    <link rel="icon" type="image/png" sizes="72x72" href="#{resource['images/apple-icon-72x72.png']}"/>
-    <link rel="icon" type="image/png" sizes="114x114" href="#{resource['images/apple-icon-114x114.png']}"/>
+    <link rel="icon" type="image/png" href="#{resource['images/apple-icon.png']}/resources/images/apple-icon.png"/>
+    <link rel="icon" type="image/png" sizes="72x72"
+          href="#{resource['images/apple-icon-72x72.png']}/resources/images/apple-icon-72x72.png"/>
+    <link rel="icon" type="image/png" sizes="114x114" href="#{resource['images:apple-icon-114x114.png']}"/>
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7cPlayfair+Display:400,400i,700,900"
@@ -102,18 +103,18 @@
                                     <li><h:link outcome="login">Login</h:link></li>
                                 </c:if>
                                 <c:if test="#{not empty authBean.loggedUsername}">
-                                    <li class="dropdown xt-drop-nav">
-                                        <a class="dropdown-toggle" data-toggle="collapse" data-hover="dropdown" aria-disabled="true">
-                                            #{authBean.loggedUsername} <span class="caret"></span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <h:form>
-                                                <li><h:commandLink action="#{profileBean.viewProfile}">Profile</h:commandLink></li>
-                                                <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
+                                        <li class="dropdown xt-drop-nav">
+                                            <a class="dropdown-toggle" data-toggle="collapse" data-hover="dropdown" aria-disabled="true">
+                                                <img style="border-radius:50%;" src="#{request.contextPath}/uploads/#{profilePictureBean.profiler()}" alt="" height="25" width="25"/> #{authBean.loggedUsername} <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <h:form>
+                                                    <li><h:commandLink action="#{profileBean.viewProfile}">Profile</h:commandLink></li>
+                                                    <li><h:commandLink action="#{authBean.logout}">Logout</h:commandLink></li>
+                                                </h:form>
+                                            </ul>
 
-                                            </h:form>
-                                        </ul>
-                                    </li>
+                                        </li>
                                 </c:if>
                             </ul>
                         </div>

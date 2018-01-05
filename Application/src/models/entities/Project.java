@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Date;
 
 @Entity
+@NamedQuery(name="Project.findProjectByProjectName", query = "select project from Project project where project.projectName = :projectNameParam")
 public class Project implements Serializable
 {
     @GeneratedValue(strategy = GenerationType.AUTO)

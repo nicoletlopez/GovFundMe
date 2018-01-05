@@ -64,6 +64,17 @@ public class User implements Serializable
     }
 
     @Basic
+    private String userProfilePic;
+
+    public String getUserProfilePic() {
+        return userProfilePic;
+    }
+
+    public void setUserProfilePic(String userProfilePic) {
+        this.userProfilePic = userProfilePic;
+    }
+
+    @Basic
     private String userPassword;
 
     public String getUserPassword()

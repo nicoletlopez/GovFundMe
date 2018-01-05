@@ -1,9 +1,11 @@
 package models.services;
 
-import models.entities.Card;
 import models.entities.User;
+
+import java.util.List;
 
 public interface ProfileService
 {
     public User viewProfile(String username);
+
 }

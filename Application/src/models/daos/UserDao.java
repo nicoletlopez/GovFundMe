@@ -1,20 +1,17 @@
 package models.daos;
 
-import models.entities.Card;
 import models.entities.Project;
 import models.entities.User;
-import models.services.DonationService;
+import models.services.LoginService;
 import models.services.ProfileService;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import java.util.ArrayList;
 import java.util.List;
 
-public class UserDao extends DonationServiceLayer implements ProfileService
-{
+public class UserDao extends DonationServiceLayer implements ProfileService, LoginService {
     /*Adds a project to the USER entity's list of projects which it has donated to */
     @Override
     public void userDonatesToProject(User user, Project project)
@@ -54,5 +51,9 @@ public class UserDao extends DonationServiceLayer implements ProfileService
         return userProfile;
     }
 
+    @Override
+    public boolean login(String username, String password) {
+        return false;
+    }
 
 }

@@ -1,12 +1,9 @@
 package models.daos;
 
-import models.InsufficientFundsException;
-import models.entities.Card;
 import models.entities.Category;
 import models.entities.Project;
 import models.entities.User;
-import models.services.CategoryService;
-import models.services.DonationService;
+import models.exceptions.DuplicateProjectNameException;
 import models.services.ProjectService;
 
 import javax.persistence.EntityManager;
@@ -47,6 +44,11 @@ public class ProjectDao extends DonationServiceLayer implements ProjectService
             project.setUserId(new UserHelper().getUserByUserName(loggedInUserName));
             project.setProjectStatus("Ongoing");
 
+            /*Check if project name has already been taken,
+             * this method throws a DuplicateProjectNameException */
+            checkProjectNameDuplicity(projectName);
+
+
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             Date creationDate = sdf.parse(sdf.format(new Date()));
             project.setDate(creationDate);
@@ -60,6 +62,12 @@ public class ProjectDao extends DonationServiceLayer implements ProjectService
             entityManagerFactory.close();
 
             return true;
+        }
+        catch(DuplicateProjectNameException duplicateProjectNameEx)
+        {
+            duplicateProjectNameEx.printStackTrace();
+            System.out.println("A project with a similar name has already been created");
+            return false;
         }
         catch(Exception ex)
         {
@@ -181,6 +189,27 @@ public class ProjectDao extends DonationServiceLayer implements ProjectService
             entityManagerFactory.close();
 
             return userLoggedIn;
+        }
+    }
+    private void checkProjectNameDuplicity(String projectName) throws DuplicateProjectNameException
+    {
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tk.govfundme.jpa");
+        EntityManager em = entityManagerFactory.createEntityManager();
+
+        em.getTransaction().begin();
+
+        TypedQuery<Project> singleProjectQuery = em.createQuery("select project from Project project where project.projectName = :projectNameParam", Project.class);
+        singleProjectQuery.setParameter("projectNameParam",projectName);
+
+        List<Project> projectList = singleProjectQuery.getResultList();
+
+        em.getTransaction().commit();
+        entityManagerFactory.close();
+
+        if(projectList.size() > 0)
+        {
+            System.out.println("A project with a similar name already exists");
+            throw new DuplicateProjectNameException();
         }
     }
 /*    @Override

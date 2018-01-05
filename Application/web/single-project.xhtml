@@ -17,7 +17,7 @@
                                     <div class="tab-content xt-pro-small-image">
                                         <!-- Tab panel-->
                                         <div role="tabpanel" id="xt-pro-1" class="tab-pane fade active in">
-                                            <img src="#{request.contextPath}/uploads/#{projectBean.projectImage}" class="img-responsive"/>
+                                            <img width="250" height="250" src="#{request.contextPath}/uploads/#{projectBean.projectImage}"/>
 
                                         </div>
                                     </div>
@@ -29,7 +29,10 @@
                                     <span class="single-price"><b>Current Balance:</b> #{projectBean.projectBalance}</span><br/>
                                     <span class="single-price"><b>Target Balance:</b>#{projectBean.projectTarget}</span><br/>
                                     <span class="single-price"><b>Status:</b>#{projectBean.projectStatus}</span><br/>
-                                    <span class="single-price"><b>Percentage Completion:</b>#{projectBean.percentageCompletion}%</span><br/>
+                                    <span class="single-price"><b>Percentage Completion:</b>
+                                        <h:outputText value="#{(projectBean.projectBalance/projectBean.projectTarget)*100}">
+                                            <f:convertNumber pattern="#0.0"/>
+                                        </h:outputText>%</span><br/>
                                     <span class="single-price"><b>Project Starter:</b>#{projectBean.creatorUser}</span><br/>
                                     <span class="single-price"><b>Date Created:</b>#{projectBean.date}</span><br/>
                                     <span class="single-price"><b>Message:</b>#{projectBean.infoMessage}</span>

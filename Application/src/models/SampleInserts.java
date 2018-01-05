@@ -66,6 +66,7 @@ public class SampleInserts
             user1.setUserPassword("user1");
             user1.setUserUsername("user1");
             user1.setCardId(platinumCard1);
+            user1.setUserProfilePic("smile..png");
 
             User user2 = new User();
             user2.setUserEmail("user2@email.com");

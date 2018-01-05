@@ -1,6 +1,7 @@
 package beans;
 
 import com.sun.faces.facelets.compiler.AbstractUIHandler;
+import models.daos.SignupDao;
 import models.daos.UserDao;
 import models.entities.Card;
 import models.entities.User;
@@ -13,12 +14,23 @@ import java.io.Serializable;
 @ManagedBean
 public class ProfileBean implements Serializable
 {
+    private String userName;
     private String fName;
     private String lName;
     private String email;
     private String ccNum;
     private String cardType;
     private double cardBalance;
+
+    public User getProjects() {
+        return projects;
+    }
+
+    public void setProjects(User projects) {
+        this.projects = projects;
+    }
+
+    private User projects;
 
     @ManagedProperty(value="#{authBean}")
     private AuthBean authBean;

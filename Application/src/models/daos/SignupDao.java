@@ -2,24 +2,25 @@ package models.daos;
 
 import models.entities.Card;
 import models.entities.User;
+import models.services.ProfileService;
 import models.services.SignupService;
 import org.hibernate.HibernateException;
 import org.hibernate.exception.ConstraintViolationException;
 
 import javax.persistence.*;
+import java.util.List;
 
-public class SignupDao implements SignupService
-{
+public class SignupDao implements SignupService, ProfileService {
     private boolean status;
-
+/*
     public static void main(String[] args)
     {
         SignupDao signupDao = new SignupDao();
-        boolean result = signupDao.signup("admin", "admin", "admin@admin.com", "user4", "admin", "123459");
+        boolean result = signupDao.signup("admin", "admin", "admin@admin.com", "user4", "admin", "123459", "default.jpg");
     }
-
+*/
     @Override
-    public boolean signup(String fname, String lname, String email, String username, String password, String ccNum)
+    public boolean signup(String fname, String lname, String email, String username, String password, String ccNum, String profilePic)
     {
         //create new user class
         User user = new User();
@@ -28,6 +29,7 @@ public class SignupDao implements SignupService
         user.setUserEmail(email);
         user.setUserUsername(username);
         user.setUserPassword(password);
+        user.setUserProfilePic(profilePic);
 
         //heck i gotta find a way to reduce redundancy of this thing. An interfaces with an array return type
         //containing the two objects???
@@ -84,5 +86,10 @@ public class SignupDao implements SignupService
 
         em.getTransaction().commit();
         entityManagerFactory.close();
+    }
+
+    @Override
+    public User viewProfile(String username) {
+        return null;
     }
 }

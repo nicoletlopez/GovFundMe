@@ -11,5 +11,8 @@
       <user-name>root</user-name>
       <introspection-schemas>*:hb</introspection-schemas>
     </data-source>
+    <data-source name="tk.govfundme.jpa/Hibernate" uuid="8fe2c23a-d7a5-4ad2-85d9-ce27a346c323">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>
