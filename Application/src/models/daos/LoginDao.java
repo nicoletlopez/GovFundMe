@@ -1,12 +1,9 @@
 package models.daos;
 
-import javassist.bytecode.stackmap.BasicBlock;
 import models.entities.User;
 import models.services.LoginService;
-import org.hibernate.exception.ConstraintViolationException;
 
 import javax.persistence.*;
-import java.util.List;
 
 public class LoginDao implements LoginService
 {

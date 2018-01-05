@@ -19,7 +19,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="text" class="form-control" a:placeholder="Project title"  value="#{createProjectBean.projectName}"/>
+                        <h:inputText type="text" class="form-control" a:placeholder="Project title" required="true" value="#{createProjectBean.projectName}"/>
                     </div>
                 </div>
                 <div class="row">
@@ -31,19 +31,19 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputFile type="file" styleClass="form-control" value="#{createProjectBean.image}"/>
+                        <h:inputFile required="true" type="file" styleClass="form-control" value="#{createProjectBean.image}"/>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputTextarea styleClass="form-control" a:placeholder="Description" value="#{createProjectBean.projectDesc}"/>
+                        <h:inputTextarea required="" styleClass="form-control" a:placeholder="Description" value="#{createProjectBean.projectDesc}"/>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-7 form-group">
-                        <h:inputText type="" styleClass="form-control" a:placeholder="Target Funds (e.g. 9999,500)" value="#{createProjectBean.projectTarget}"  />
+                        <h:inputText type="" styleClass="form-control" a:placeholder="Target Funds (e.g. 9999,500)" value="#{createProjectBean.projectTarget}" required="" />
                     </div>
                 </div>
 
@@ -55,11 +55,6 @@
             </div>
             </h:form>
         </div>
-        <!--Dito nicole bebe :D-->
-        <ui:repeat value="#{createProjectBean.infoMessage}" var="errorMessage">
-            #{errorMessage}
-        </ui:repeat>
-
     </ui:define>
 
 

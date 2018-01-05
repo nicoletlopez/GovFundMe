@@ -7,10 +7,8 @@ import models.services.ProjectService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.SessionScoped;
 import javax.servlet.http.Part;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean
@@ -22,7 +20,6 @@ public class CreateProjectBean implements Serializable
     private String projectDesc;
     private double projectTarget;
     private Part image;
-    public ArrayList<String> infoMessage;
 
     private List<String> categoriesList;
 
@@ -113,63 +110,18 @@ public class CreateProjectBean implements Serializable
         this.image = image;
     }
 
-    public ArrayList<String> getInfoMessage()
-    {
-        return infoMessage;
-    }
-
-    public void setInfoMessage(ArrayList<String> infoMessage)
-    {
-        this.infoMessage = infoMessage;
-    }
-
     public String createProject()
     {
         UploadBean uploadBean = new UploadBean();
         String projectImageFileName = uploadBean.doUpload(image);
         ProjectService projectService = new ProjectDao();
-
-        if(validateFields())
+        if(projectService.createProject(projectName,projectCategory,projectImageFileName,projectDesc,projectTarget,loggedUsername))
         {
-            if (projectService.createProject(projectName, projectCategory, projectImageFileName, projectDesc, projectTarget, loggedUsername))
-            {
-                return "index";
-            }
-            else
-            {
-                return "projects";
-            }
+            return "index";
         }
         else
         {
-            return "start-project";
-        }
-    }
-    private boolean validateFields()
-    {
-        if (this.projectName == null || this.image == null || this.projectDesc == null || (this.projectTarget <= 0))
-        {
-            if (this.projectName == null)
-            {
-                this.infoMessage.add("Project name required");
-            }
-            else if (this.image == null)
-            {
-                this.infoMessage.add("Project image required");
-            }
-            else if (this.projectDesc == null)
-            {
-                this.infoMessage.add("Project description required");
-            }
-            else if (((Double) this.projectTarget).isNaN())
-            {
-                this.infoMessage.add("Target must be at least 1");
-            }
-            return false;
-        }
-        else
-        {
-            return true;
+            return "projects";
         }
     }
 }

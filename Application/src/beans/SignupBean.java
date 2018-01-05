@@ -5,6 +5,7 @@ import models.services.SignupService;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import javax.servlet.http.Part;
 
 @ManagedBean
 public class SignupBean
@@ -16,6 +17,9 @@ public class SignupBean
     private String password;
     private String confPass;
     private String ccNum;
+    private Part profilePic;
+
+
 
     private String infoMessage;
 
@@ -112,13 +116,22 @@ public class SignupBean
         this.authBean = authBean;
     }
 
+    public Part getProfilePic() {
+        return profilePic;
+    }
+
+    public void setProfilePic(Part profilePic) {
+        this.profilePic = profilePic;
+    }
     private SignupService signupService = new SignupDao();
 
     public String signup()
     {
+        UploadBean uploadBean = new UploadBean();
+        String picture = uploadBean.doUpload(profilePic);
         if (this.password.equals(this.confPass))
         {
-            if (signupService.signup(this.fname, this.lname, this.email, this.username, this.password, this.ccNum))
+            if (signupService.signup(this.fname, this.lname, this.email, this.username, this.password, this.ccNum, picture))
             {
                 authBean.setLoggedUsername(this.username);
                 this.infoMessage = "Successfully registered";
