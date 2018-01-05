@@ -1,5 +1,6 @@
 package beans;
 
+import com.sun.faces.facelets.compiler.AbstractUIHandler;
 import models.daos.SignupDao;
 import models.daos.UserDao;
 import models.entities.Card;
