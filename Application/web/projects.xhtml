@@ -43,7 +43,10 @@
                                                                 <span class="name xt-semibold">Target:</span>
                                                             </div>
                                                             <div class="price-tag pull-right">
-                                                                <span class="old-price">#{project.projectBalance}(#{(project.projectBalance/project.projectTarget) * 100}%)</span>
+                                                                <span class="old-price">#{project.projectBalance}
+                                                                    (<h:outputText value="#{(project.projectBalance/project.projectTarget)*100}">
+                                                                        <f:convertNumber pattern="#0.0"/>
+                                                                    </h:outputText>%)</span>
                                                                 <span class="new-price xt-semibold">#{project.projectTarget}</span>
                                                             </div>
                                                             <div class="xt-featured-caption">
@@ -52,7 +55,10 @@
                                                                     <span class="name xt-semibold">Target:</span>
                                                                 </div>
                                                                 <div class="price-tag pull-right">
-                                                                    <span class="old-price">#{project.projectBalance}(#{(project.projectBalance/project.projectTarget) * 100}%)</span>
+                                                                    <span class="old-price">#{project.projectBalance}
+                                                                        (<h:outputText value="#{(project.projectBalance/project.projectTarget)*100}">
+                                                                            <f:convertNumber pattern="#0.0"/>
+                                                                        </h:outputText>%)</span>
                                                                     <span class="new-price xt-semibold">#{project.projectTarget}</span>
                                                                 </div>
                                                                 <div class="add-cart">

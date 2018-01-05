@@ -7,11 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/beans/CreateProjectBean.java" afterPath="$PROJECT_DIR$/src/beans/CreateProjectBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/ProfileBean.java" afterPath="$PROJECT_DIR$/src/beans/ProfileBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/LoginDao.java" afterPath="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/web/projects.xhtml" afterPath="$PROJECT_DIR$/web/projects.xhtml" />
-      <change beforePath="$PROJECT_DIR$/web/start-project.xhtml" afterPath="$PROJECT_DIR$/web/start-project.xhtml" />
+      <change beforePath="$PROJECT_DIR$/web/resources/images/apple-icon-114x114.png" afterPath="$PROJECT_DIR$/web/resources/images/apple-icon-114x114.png" />
+      <change beforePath="$PROJECT_DIR$/web/resources/images/apple-icon-72x72.png" afterPath="$PROJECT_DIR$/web/resources/images/apple-icon-72x72.png" />
+      <change beforePath="$PROJECT_DIR$/web/resources/images/apple-icon.png" afterPath="$PROJECT_DIR$/web/resources/images/apple-icon.png" />
+      <change beforePath="$PROJECT_DIR$/web/single-project.xhtml" afterPath="$PROJECT_DIR$/web/single-project.xhtml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../govfundmemaven/target/" />
@@ -49,16 +50,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/services/ProjectService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans/ProjectBean.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,8 +65,8 @@
       <file leaf-file-name="single-project.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="19" column="138" lean-forward="false" selection-start-line="19" selection-start-column="138" selection-end-line="19" selection-end-column="138" />
+            <state relative-caret-position="-522">
+              <caret line="30" column="117" lean-forward="true" selection-start-line="30" selection-start-column="117" selection-end-line="30" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -84,18 +75,18 @@
       <file leaf-file-name="projects.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/projects.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="23" column="77" lean-forward="false" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+            <state relative-caret-position="94">
+              <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="60" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start-project.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start-project.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="79">
+              <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -125,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateProjectBean.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateProjectBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/beans/CreateProjectBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
+            <state relative-caret-position="442">
               <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -178,7 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Project</find>
       <find>projects</find>
       <find>h:</find>
       <find>uploadbean</find>
@@ -208,6 +198,7 @@
       <find>if</find>
       <find>get</find>
       <find>view</find>
+      <find>projectname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -266,12 +257,12 @@
         <option value="$PROJECT_DIR$/src/beans/ProfilePictureBean.java" />
         <option value="$PROJECT_DIR$/src/models/services/ViewProjectService.java" />
         <option value="$PROJECT_DIR$/src/beans/ProjectImageBean.java" />
-        <option value="$PROJECT_DIR$/web/single-project.xhtml" />
         <option value="$PROJECT_DIR$/src/beans/CreateProjectBean.java" />
         <option value="$PROJECT_DIR$/src/beans/ProfileBean.java" />
         <option value="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
-        <option value="$PROJECT_DIR$/web/projects.xhtml" />
         <option value="$PROJECT_DIR$/web/start-project.xhtml" />
+        <option value="$PROJECT_DIR$/web/projects.xhtml" />
+        <option value="$PROJECT_DIR$/web/single-project.xhtml" />
       </list>
     </option>
   </component>
@@ -364,32 +355,6 @@
             <path>
               <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="daos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -414,19 +379,6 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\images" />
-      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\self\images" />
-      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\self" />
-      <recent name="C:\tempGithub\GovFundMe\Application\upload" />
-      <recent name="C:\Users\User\Documents\GitHub\GovFundMe\Application\src\models\entities" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="models.entities" />
     </key>
@@ -436,6 +388,19 @@
       <recent name="C:\tempGithub\GovFundMe\web" />
       <recent name="C:\tempGithub\GovFundMe\web\WEB-INF" />
       <recent name="C:\tempGithub\GovFundMe\web\WEB-INF\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\images" />
+      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\self\images" />
+      <recent name="C:\tempGithub\GovFundMe\Application\web\resources\self" />
+      <recent name="C:\tempGithub\GovFundMe\Application\upload" />
+      <recent name="C:\Users\User\Documents\GitHub\GovFundMe\Application\src\models\entities" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -972,7 +937,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278472000" />
+    <option name="totallyTimeSpent" value="280569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1154,13 +1119,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../govfundmemaven/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="128" column="51" lean-forward="true" selection-start-line="128" selection-start-column="51" selection-end-line="128" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/models.daos.CardDao">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1237,11 +1195,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/daos/ProfileServiceLayer.java" />
-    <entry file="file://$PROJECT_DIR$/web/resources/images/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/daos/CardDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -1577,28 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="19" column="138" lean-forward="false" selection-start-line="19" selection-start-column="138" selection-end-line="19" selection-end-column="138" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/CreateProjectBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2574#2575#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beans/ProfileBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1647,19 +1578,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/projects.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="23" column="77" lean-forward="false" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/apple-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state relative-caret-position="79">
+          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/projects.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="58" column="73" lean-forward="true" selection-start-line="58" selection-start-column="73" selection-end-line="60" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="30" column="117" lean-forward="true" selection-start-line="30" selection-start-column="117" selection-end-line="30" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/CreateProjectBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="143" column="9" lean-forward="true" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2540#2541#0" expanded="true" />
+            <element signature="e#2574#2575#0" expanded="true" />
+            <element signature="e#2639#2640#0" expanded="true" />
+            <element signature="e#2685#2686#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
