@@ -39,7 +39,7 @@
                                                         </div>
                                                         <div class="product-info">
                                                             <div class="product-title">
-                                                                <span class="category xt-uppercase">Project: #{project.projectName}</span>
+                                                                <span class="category xt-uppercase">#{project.projectName.length() gt 18 ? project.projectName.substring(0,15).concat('...'): project.projectName}</span>
                                                                 <span class="name xt-semibold">Target:</span>
                                                             </div>
                                                             <div class="price-tag pull-right">
@@ -51,7 +51,7 @@
                                                             </div>
                                                             <div class="xt-featured-caption">
                                                                 <div class="product-title">
-                                                                    <span class="category xt-uppercase">Project: #{project.projectName}</span>
+                                                                    <span class="category xt-uppercase">#{project.projectName.length() gt 18 ? project.projectName.substring(0,15).concat('...'): project.projectName}</span>
                                                                     <span class="name xt-semibold">Target:</span>
                                                                 </div>
                                                                 <div class="price-tag pull-right">

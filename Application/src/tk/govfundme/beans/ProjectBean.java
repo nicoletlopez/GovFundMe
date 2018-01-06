@@ -31,6 +31,7 @@ public class ProjectBean implements Serializable
     private double percentageCompletion;
     private double donation;
     private String infoMessage;
+    private String creatorEmail;
 
     @ManagedProperty(value = "#{authBean}")
     private AuthBean user;
@@ -50,6 +51,7 @@ public class ProjectBean implements Serializable
         this.category = project.getCategoryId().getCategoryName();
         this.creatorUser = project.getUserId().getUserUsername();
         this.percentageCompletion = this.projectBalance/this.projectTarget * 100.00;
+        this.creatorEmail = project.getUserId().getUserEmail();
         return "single-project";
     }
 
@@ -68,7 +70,7 @@ public class ProjectBean implements Serializable
             DonationService addToBalanceObject = new ProjectDao();
             addToBalanceObject.addToProjectBalance(project,donation);
 
-            this.infoMessage = "Successfully donated " + donation + " to "  + projectName;
+            this.infoMessage = "Successfully donated " + donation + " to project "  + projectName;
             this.projectId = project.getProjectId();
             this.date = project.getDate();
             this.projectBalance = project.getProjectBalance();
@@ -79,13 +81,14 @@ public class ProjectBean implements Serializable
             this.projectTarget = project.getProjectTarget();
             this.category = project.getCategoryId().getCategoryName();
             this.creatorUser = project.getUserId().getUserUsername();
+            this.creatorEmail = project.getUserId().getUserEmail();
             this.percentageCompletion =this.projectBalance/this.projectTarget * 100.00;
             //FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
             viewProject(this.projectName);
         }
         else
         {
-            this.infoMessage = "Insufficient Funds";
+            this.infoMessage = "Insufficient Funds for project "+projectName;
             this.projectId = project.getProjectId();
             this.date = project.getDate();
             this.projectBalance = project.getProjectBalance();
@@ -96,6 +99,7 @@ public class ProjectBean implements Serializable
             this.projectTarget = project.getProjectTarget();
             this.category = project.getCategoryId().getCategoryName();
             this.creatorUser = project.getUserId().getUserUsername();
+            this.creatorEmail = project.getUserId().getUserEmail();
             this.percentageCompletion = this.projectBalance/this.projectTarget * 100.00;
             viewProject(this.projectName);
         }
@@ -247,4 +251,11 @@ public class ProjectBean implements Serializable
         this.infoMessage = infoMessage;
     }
 
+    public String getCreatorEmail() {
+        return creatorEmail;
+    }
+
+    public void setCreatorEmail(String creatorEmail) {
+        this.creatorEmail = creatorEmail;
+    }
 }

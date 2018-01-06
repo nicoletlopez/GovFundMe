@@ -6,51 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/src/beans/AuthBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/AuthBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/CreateProjectBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/CreateProjectBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/LoginBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/LoginBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/NavBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/NavBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/ProfileBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/ProfileBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/ProfilePictureBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/ProfilePictureBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/ProjectBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/ProjectBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/SampleBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/SampleBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/SignupBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/SignupBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/UploadBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/UploadBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/beans/ViewProjectsBean.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/beans/ViewProjectsBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/database/scripts/dump.sql" afterPath="$PROJECT_DIR$/src/tk/govfundme/database/scripts/dump.sql" />
-      <change beforePath="$PROJECT_DIR$/src/models/DirectQueries.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/DirectQueries.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/JoinQueries.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/JoinQueries.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/SampleInserts.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/SampleInserts.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/SampleQueries.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/SampleQueries.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/Test.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/Test.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/CardDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/CardDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/CategoryDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/CategoryDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/DonationDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/DonationDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/DonationServiceLayer.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/servicelayers/DonationServiceLayer.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/LoginDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/LoginDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/ProjectDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/ProjectDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/SignupDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/SignupDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/daos/UserDao.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/daos/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/Card.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/entities/Card.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/CardType.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/entities/CardType.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/Category.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/entities/Category.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/Project.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/entities/Project.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/entities/User.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/models/exceptions/DuplicateProjectNameException.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/exceptions/DuplicateProjectNameException.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/exceptions/InsufficientFundsException.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/exceptions/InsufficientFundsException.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/CategoryService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/CategoryService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/DonationService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/DonationService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/LoginService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/LoginService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/ProfileService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/ProfileService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/ProjectService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/ProjectService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/SignupService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/SignupService.java" />
-      <change beforePath="$PROJECT_DIR$/src/models/services/ViewProjectService.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/models/services/ViewProjectService.java" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/ImageServlet.java" afterPath="$PROJECT_DIR$/src/tk/govfundme/servlets/ImageServlet.java" />
-    </list>
+    <list default="true" id="079602f1-42ba-4b70-8355-0abd0694d928" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../govfundmemaven/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,24 +43,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProjectBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProjectBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create-account.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/create-account.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="142" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="142" />
-              <folding />
+      <file leaf-file-name="Persistence/JavaeeElement:/4323a378/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel" pinned="false" current-in-tab="false">
+        <entry file="uml://Persistence/JavaeeElement:/4323a378/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>Persistence</ID>
+              <OriginalElement>JavaeeElement:/4323a378/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel</OriginalElement>
+              <nodes>
+                <node x="0.0" y="435.0">CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java</node>
+                <node x="173.0" y="380.0">User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java</node>
+                <node x="172.5" y="0.0">Category#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Category.java</node>
+                <node x="85.25" y="614.0">Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java</node>
+                <node x="169.5" y="124.0">Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java" target="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java">
+                  <point x="-44.0" y="-92.0" />
+                  <point x="217.0" y="355.0" />
+                  <point x="215.25" y="355.0" />
+                  <point x="-45.75" y="103.0" />
+                </edge>
+                <edge source="Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java" target="CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java">
+                  <point x="-41.75" y="-48.0" />
+                  <point x="127.0" y="589.0" />
+                  <point x="76.5" y="589.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java" target="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java">
+                  <point x="45.74999999999999" y="103.0" />
+                  <point x="306.75" y="355.0" />
+                  <point x="305.0" y="355.0" />
+                  <point x="43.99999999999999" y="-92.0" />
+                </edge>
+                <edge source="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java" target="Category#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Category.java">
+                  <point x="0.0" y="-103.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java" target="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java">
+                  <point x="41.75" y="-48.0" />
+                  <point x="210.5" y="589.0" />
+                  <point x="261.0" y="589.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.2136986301369868" x="56.742663656884815" y="425.7426636568848" />
+              <SelectedNodes>
+                <node>CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Superclasses</Category>
+                <Category>Embeddables</Category>
+                <Category>Properties</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -112,8 +103,52 @@
       <file leaf-file-name="start-project.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+            <state relative-caret-position="207">
+              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateProjectBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/CreateProjectBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/UploadBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfilePictureBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProfilePictureBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -122,63 +157,9 @@
       <file leaf-file-name="base.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/base.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+            <state relative-caret-position="187">
+              <caret line="107" column="145" lean-forward="false" selection-start-line="107" selection-start-column="137" selection-end-line="107" selection-end-column="145" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="77" column="58" lean-forward="false" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupBean.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/SignupBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DonationServiceLayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/servicelayers/DonationServiceLayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DonationDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/DonationDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/SignupDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -196,10 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>uploadbean</find>
-      <find>projectimage</find>
-      <find>getpercentage</find>
-      <find>ui:repeat</find>
       <find>h:form</find>
       <find>ui</find>
       <find>form</find>
@@ -226,6 +203,10 @@
       <find>projectname</find>
       <find>InsufficientFundsException</find>
       <find>authbean</find>
+      <find>border-</find>
+      <find>left-me</find>
+      <find>infomessage</find>
+      <find>left-menu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,10 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/models/entities/Card.java" />
-        <option value="$PROJECT_DIR$/src/models/daos/DonationDao.java" />
-        <option value="$PROJECT_DIR$/src/models/daos/CardDao.java" />
-        <option value="$PROJECT_DIR$/src/models/daos/DonationServiceLayer.java" />
         <option value="$PROJECT_DIR$/src/models/services/DonationService.java" />
         <option value="$PROJECT_DIR$/src/reader/ImageReader.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -254,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/models/testing.java" />
         <option value="$PROJECT_DIR$/src/beans/ProjectBean.java" />
         <option value="$PROJECT_DIR$/src/models/daos/ProfileServiceLayer.java" />
-        <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/src/beans/AuthBean.java" />
         <option value="$PROJECT_DIR$/src/beans/test.java" />
         <option value="$PROJECT_DIR$/src/servlets/ImageServlet.java" />
@@ -275,8 +251,6 @@
         <option value="$PROJECT_DIR$/src/beans/CreateProjectBean.java" />
         <option value="$PROJECT_DIR$/src/beans/ProfileBean.java" />
         <option value="$PROJECT_DIR$/src/models/daos/LoginDao.java" />
-        <option value="$PROJECT_DIR$/web/projects.xhtml" />
-        <option value="$PROJECT_DIR$/web/single-project.xhtml" />
         <option value="$PROJECT_DIR$/src/models/Sample.java" />
         <option value="$PROJECT_DIR$/src/models/exceptions/InsufficientFundsException.java" />
         <option value="$PROJECT_DIR$/src/models/entities/Project.java" />
@@ -290,6 +264,13 @@
         <option value="$PROJECT_DIR$/src/beans/SignupBean.java" />
         <option value="$PROJECT_DIR$/web/start-project.xhtml" />
         <option value="$PROJECT_DIR$/src/tk/govfundme/models/daos/servicelayers/DonationServiceLayer.java" />
+        <option value="$PROJECT_DIR$/src/tk/govfundme/models/SampleInserts.java" />
+        <option value="$PROJECT_DIR$/web/projects.xhtml" />
+        <option value="$PROJECT_DIR$/src/tk/govfundme/models/entities/Project.java" />
+        <option value="$PROJECT_DIR$/src/tk/govfundme/beans/ProjectBean.java" />
+        <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/web/single-project.xhtml" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -342,7 +323,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="314" />
     <option name="y" value="43" />
     <option name="width" value="950" />
@@ -367,7 +348,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -385,20 +365,25 @@
               <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="govfundme" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="govfundme" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="govfundme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,7 +435,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Akin toh babe, gawa ka sarili mo">
+  <component name="RunManager" selected="Tomcat Server.Andrey">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -735,6 +720,79 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Andrey" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="Application:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_govfundme" />
+        <option name="JNDI_PORT" value="1098" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57933" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Application:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="Pam's (Sabing pam's config eh)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.11" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsf" />
       <option name="BROWSER_ID" value="40b15227-9e84-4dba-a29f-4e0f076c83c8" />
@@ -819,20 +877,19 @@
       <item index="0" class="java.lang.String" itemvalue="Application.ProfilePictureBean" />
       <item index="1" class="java.lang.String" itemvalue="Application.UserDao" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Akin toh babe, gawa ka sarili mo" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.Pam's (Sabing pam's config eh)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SampleInserts" />
-      <item index="5" class="java.lang.String" itemvalue="Application.CardDao" />
-      <item index="6" class="java.lang.String" itemvalue="Application.test" />
-      <item index="7" class="java.lang.String" itemvalue="Application.test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.Andrey" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.Pam's (Sabing pam's config eh)" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SampleInserts" />
+      <item index="6" class="java.lang.String" itemvalue="Application.CardDao" />
+      <item index="7" class="java.lang.String" itemvalue="Application.test" />
       <item index="8" class="java.lang.String" itemvalue="Application.Test" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.SampleInserts" />
         <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.test (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.test" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CardDao" />
+        <item index="2" class="java.lang.String" itemvalue="Application.test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CardDao" />
       </list>
     </recent_temporary>
   </component>
@@ -885,6 +942,8 @@
       <workItem from="1515147934919" duration="3815000" />
       <workItem from="1515158917144" duration="2938000" />
       <workItem from="1515166360741" duration="1684000" />
+      <workItem from="1515204768749" duration="7166000" />
+      <workItem from="1515215520128" duration="4202000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: commented out LoginDao test case">
       <created>1514299601719</created>
@@ -995,7 +1054,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293475000" />
+    <option name="totallyTimeSpent" value="304843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,7 +1066,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41889763" sideWeight="0.1068814" order="14" side_tool="true" content_ui="tabs" />
@@ -1016,8 +1076,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14447807" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886535" sideWeight="0.6117318" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496112" sideWeight="0.79611653" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1027,13 +1087,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40192926" sideWeight="0.8931186" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2956989" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41503268" sideWeight="0.8931186" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.44844124" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.55155873" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2193646" sideWeight="0.47206703" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.52793294" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.44748858" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32636657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.44748858" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1048,6 +1107,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32636657" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1147,18 +1207,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tk/govfundme/models/daos/ProjectDao.java</url>
+          <line>204</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/services/DonationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/beans/test.java" />
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/servlets/ImageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1171,13 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/entities/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1206,7 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1245,13 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/SampleInserts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
@@ -1266,13 +1312,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProfilePictureBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1312,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/UploadBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/LoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1328,10 +1360,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/SignupDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="238">
           <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1351,20 +1383,6 @@
     <entry file="file://$PROJECT_DIR$/web/resources/images/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/projects.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="73" lean-forward="false" selection-start-line="60" selection-start-column="87" selection-end-line="60" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="117" lean-forward="false" selection-start-line="30" selection-start-column="117" selection-end-line="30" selection-end-column="117" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Sample.java" />
@@ -1473,19 +1491,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/DirectQueries.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1503,53 +1512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/ProjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="211" column="54" lean-forward="true" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProjectBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/CreateProjectBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/entities/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="131" column="22" lean-forward="false" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/base.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="58" lean-forward="false" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/create-account.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1558,28 +1520,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/servicelayers/DonationServiceLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/DonationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="119">
           <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1596,8 +1549,187 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/SignupBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/SampleInserts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProjectBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="85" column="82" lean-forward="true" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7290#7291#0" expanded="true" />
+            <element signature="e#7325#7326#0" expanded="true" />
+            <element signature="e#7381#7382#0" expanded="true" />
+            <element signature="e#7429#7430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#ui:define#1;n#ui:composition#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/projects.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/single-project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="52" column="98" lean-forward="true" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/entities/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/daos/ProjectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/models/entities/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/4323a378/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/4323a378/tk.govfundme.jpa/Application/jpa/JPA/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="0.0" y="435.0">CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java</node>
+            <node x="173.0" y="380.0">User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java</node>
+            <node x="172.5" y="0.0">Category#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Category.java</node>
+            <node x="85.25" y="614.0">Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java</node>
+            <node x="169.5" y="124.0">Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java" target="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java">
+              <point x="-44.0" y="-92.0" />
+              <point x="217.0" y="355.0" />
+              <point x="215.25" y="355.0" />
+              <point x="-45.75" y="103.0" />
+            </edge>
+            <edge source="Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java" target="CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java">
+              <point x="-41.75" y="-48.0" />
+              <point x="127.0" y="589.0" />
+              <point x="76.5" y="589.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java" target="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java">
+              <point x="45.74999999999999" y="103.0" />
+              <point x="306.75" y="355.0" />
+              <point x="305.0" y="355.0" />
+              <point x="43.99999999999999" y="-92.0" />
+            </edge>
+            <edge source="Project#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Project.java" target="Category#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Category.java">
+              <point x="0.0" y="-103.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="Card#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/Card.java" target="User#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/User.java">
+              <point x="41.75" y="-48.0" />
+              <point x="210.5" y="589.0" />
+              <point x="261.0" y="589.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.2136986301369868" x="56.742663656884815" y="425.7426636568848" />
+          <SelectedNodes>
+            <node>CardType#file://C:/Users/Andrey Buzon/Documents/GitHub/GovFundMe/Application/src/tk/govfundme/models/entities/CardType.java</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Superclasses</Category>
+            <Category>Embeddables</Category>
+            <Category>Properties</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/base.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="107" column="145" lean-forward="false" selection-start-line="107" selection-start-column="137" selection-end-line="107" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/ProfilePictureBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/start-project.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/CreateProjectBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tk/govfundme/beans/UploadBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding />
         </state>
       </provider>

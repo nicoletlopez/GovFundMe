@@ -37,6 +37,7 @@ public class Project implements Serializable
     }
 
     @Basic
+    @Column(columnDefinition = "TEXT")
     private String projectDesc;
 
     public String getProjectDesc()
