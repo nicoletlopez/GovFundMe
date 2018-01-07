@@ -12,7 +12,7 @@ Requisites:
 3. Server Environment (Tomcat)
 
 Setup: 
-1) Create a local MySQL database (port 3306)
+1) Create a local MySQL database named "hb" (port 3306)
 2) Locate and run the file Application/src/tk.govfundme/models/SampleInserts.java
 3) Run the project inside a Tomcat server environment
 
