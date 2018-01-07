@@ -3,6 +3,7 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
                 template="projects.xhtml">
 
     <ui:define name="title">Project - #{projectBean.projectName}</ui:define>
@@ -34,8 +35,9 @@
                                             <f:convertNumber pattern="#0.0"/>
                                         </h:outputText>%</span><br/>
                                     <span class="single-price"><b>Project Starter:</b>#{projectBean.creatorUser}</span><br/>
+                                    <span class="single-price"><b>Email:</b>#{projectBean.creatorEmail}</span><br/>
                                     <span class="single-price"><b>Date Created:</b>#{projectBean.date}</span><br/>
-                                    <span class="single-price"><b>Message:</b>#{projectBean.infoMessage}</span>
+                                    <c:if test="#{not empty authBean.loggedUsername}">
                                     <h:form>
                                         <div class="select-quantity">
                                             <h:inputText type="number" step="1" name="quantity" title="Qty"
@@ -46,9 +48,13 @@
                                                 <h:commandLink href="" class="btn btn-fill" action="#{projectBean.donateToProject(projectBean.projectName)}">Donate!</h:commandLink>
                                         </div>
                                     </h:form>
+                                    </c:if>
+                                    <c:if test="#{empty authBean.loggedUsername}">
+                                        <a class="btn" href="login.jsf">Log in</a> before donating
+                                    </c:if>
                                     <div class="product-additional-info">
                                         <ul>
-                                            <li><b>Category:</b><a href="#">#{projectBean.category}</a></li>
+                                            <li><b>Category:</b>#{projectBean.category}</li>
 
                                         </ul>
                                     </div>

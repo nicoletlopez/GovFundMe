@@ -5,10 +5,11 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="tk.govfundme.jpa">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>models.entities.CardType</class>
-        <class>models.entities.Card</class>
-        <class>models.entities.User</class>
-        <class>models.entities.Project</class>
+        <class>tk.govfundme.models.entities.CardType</class>
+        <class>tk.govfundme.models.entities.Card</class>
+        e
+        
+        <class>tk.govfundme.models.entities.Project</class>
         <properties>
             <property name="hibernate.archive.autodetection" value="class"/>
             <!--<property name="javax.persistence.schema-generation.database.action" value="create"/>-->
