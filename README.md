@@ -19,8 +19,8 @@ Setup:
 Optional:
   In order to insert sample data into the database:
   1) Navigate to GovFundMe/Application/src/META-INF/context.xml
-  2) From <property name="hibernate.hbm2ddl.auto" value="update"/> change the value to
-      <property name="hibernate.hbm2ddl.auto" value="create"/>
+  2) From \<property name="hibernate.hbm2ddl.auto" value="update"/\> change the value to
+      \<property name="hibernate.hbm2ddl.auto" value="create"/\>
   3) Navigate to GovFundMe/Application/src/models/SampleInserts.java
   4) Run the program
   5) Revert the change you made to the context.xml file 
